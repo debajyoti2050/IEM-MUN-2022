@@ -71,9 +71,6 @@ export default function Collaborators() {
                 <SwiperSlide><div className="imgcenter"><img src={INDBHU} class="img-fluid" alt="" /></div></SwiperSlide>
                 <SwiperSlide><div className="imgcenter1"><img src={UN75} class="img-fluid" alt="" /></div></SwiperSlide>
                 <SwiperSlide><div className="imgcenter"><img src={WPIMUN} class="img-fluid" alt="" /></div></SwiperSlide>
-               
-
-
               </Swiper>
             </>
           </div>
