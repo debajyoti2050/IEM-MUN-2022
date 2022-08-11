@@ -1,8 +1,14 @@
 import "./hero.css";
-import HeroBG from '../../assets/BG_image.png'
-import React from "react";
+import HeroBG from "../../assets/BG_image.png";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Hero() {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
     <section id="hero">
       <div className="hero-container">
@@ -21,20 +27,26 @@ export default function Hero() {
           <div className="carousel-inner" role="listbox">
             <div
               className="carousel-item active"
-              
-              style={{backgroundImage: "url(" + HeroBG + ")"}}
+              style={{ backgroundImage: "url(" + HeroBG + ")" }}
             >
               <div className="carousel-container">
                 <div className="container">
-                  <h2 className="animate__animated animate__fadeInDown">
+                  <h2
+                    className="animate__animated animate__fadeInDown"
+                    data-aos="fade-in-down"
+                    data-aos-delay="100"
+                  >
                     <img height="300rem" src="MUN_Logo.png" alt="mun logo" />
                   </h2>
-                  <h2 className="animate__animated animate__fadeInUp">
+                  <h2 className="animate__animated animate__fadeInUp" data-aos="fade-in-up"
+                    data-aos-delay="100">
                     MODEL UNITED NATIONS
                   </h2>
                   <a
                     href="/"
                     className="btn-get-started scrollto animate__animated animate__fadeInUp"
+                    data-aos="fade-in-up"
+                    data-aos-delay="100"
                   >
                     Apply Now
                   </a>
