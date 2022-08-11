@@ -52,26 +52,25 @@ export default function Collaborators() {
                 }}
                 navigation={true}
                 modules={[Pagination, Navigation]}
-                className="swiper-slide"
               >
-                <SwiperSlide><img src={Applex} class="img-fluid" alt="" /></SwiperSlide>
-                <SwiperSlide><img src={CYIMUN} class="img-fluid" alt="" /></SwiperSlide>
-                <SwiperSlide><img src={Greenlogo} class="img-fluid" alt="" /></SwiperSlide>
-                <SwiperSlide><img src={IDC} class="img-fluid" alt="" /></SwiperSlide>
-                <SwiperSlide><img src={IMC} class="img-fluid" alt="" /></SwiperSlide>
-                <SwiperSlide><img src={JMUN} class="img-fluid" alt="" /></SwiperSlide>
-                <SwiperSlide><img src={Logo1} class="img-fluid" alt="" /></SwiperSlide>
-                <SwiperSlide><img src={Logo2} class="img-fluid" alt="" /></SwiperSlide>
-                <SwiperSlide><img src={MUNA} class="img-fluid" alt="" /></SwiperSlide>
-                <SwiperSlide><img src={MUNAG} alt="" /></SwiperSlide>
-                <SwiperSlide><img src={Nincompoop} class="img-fluid" alt="" /></SwiperSlide>
-                <SwiperSlide><img src={OMUN} class="img-fluid" alt="" /></SwiperSlide>
-                <SwiperSlide><img src={Onuu} class="img-fluid" alt="" /></SwiperSlide>
-                <SwiperSlide><img src={RM} class="img-fluid" alt="" /></SwiperSlide>
-                <SwiperSlide><img src={UB} class="img-fluid" alt="" /></SwiperSlide>
-                <SwiperSlide><img src={INDBHU} class="img-fluid" alt="" /></SwiperSlide>
-                <SwiperSlide> <img src={UN75} class="img-fluid" alt="" /></SwiperSlide>
-                <SwiperSlide><img src={WPIMUN} class="img-fluid" alt="" /></SwiperSlide>
+                <SwiperSlide><div className="imgcenter"><img src={Applex} class="img-fluid" alt="" /></div></SwiperSlide>
+                <SwiperSlide><div className="imgcenter"><img src={CYIMUN} class="img-fluid" alt="" /></div></SwiperSlide>
+                <SwiperSlide><div className="imgcenter1"><img src={Greenlogo} class="img-fluid" alt="" /></div></SwiperSlide>
+                <SwiperSlide><div className="imgcenter"><img src={IDC} class="img-fluid" alt="" /></div></SwiperSlide>
+                <SwiperSlide><div className="imgcenter"><img src={IMC} class="img-fluid" alt="" /></div></SwiperSlide>
+                <SwiperSlide><div className="imgcenter"><img src={JMUN} class="img-fluid" alt="" /></div></SwiperSlide>
+                <SwiperSlide><div className="imgcenter"><img src={Logo1} class="img-fluid" alt="" /></div></SwiperSlide>
+                <SwiperSlide><div className="imgcenter"><img src={Logo2} class="img-fluid" alt="" /></div></SwiperSlide>
+                <SwiperSlide><div className="imgcenter"><img src={MUNA} class="img-fluid" alt="" /></div></SwiperSlide>
+                <SwiperSlide><div className="imgcenter"><img src={MUNAG} class="img-fluid" alt="" /></div></SwiperSlide>
+                <SwiperSlide><div className="imgcenter"><img src={Nincompoop} class="img-fluid" alt="" /></div></SwiperSlide>
+                <SwiperSlide><div className="imgcenter"><img src={OMUN} class="img-fluid" alt="" /></div></SwiperSlide>
+                <SwiperSlide><div className="imgcenter"><img src={Onuu} class="img-fluid" alt="" /></div></SwiperSlide>
+                <SwiperSlide><div className="imgcenter"><img src={RM} class="img-fluid" alt="" /></div></SwiperSlide>
+                <SwiperSlide><div className="imgcenter"><img src={UB} class="img-fluid" alt="" /></div></SwiperSlide>
+                <SwiperSlide><div className="imgcenter"><img src={INDBHU} class="img-fluid" alt="" /></div></SwiperSlide>
+                <SwiperSlide><div className="imgcenter1"><img src={UN75} class="img-fluid" alt="" /></div></SwiperSlide>
+                <SwiperSlide><div className="imgcenter"><img src={WPIMUN} class="img-fluid" alt="" /></div></SwiperSlide>
                
 
 

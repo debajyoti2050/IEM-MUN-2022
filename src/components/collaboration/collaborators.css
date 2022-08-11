@@ -10,6 +10,23 @@
   #clients img:hover {
     opacity: 1;
   }
+
+  #clients .imgcenter{
+    display:flex;
+    justify-content: center;
+    border-radius:4px;
+    width: 150px;
+    height:auto;
+  }
+
+  #clients .imgcenter1{
+    display:flex;
+    justify-content: center;
+    border-radius:4px;
+    width: 150px;
+    height:auto;
+    margin-top:35%;
+  }
   
   #clients .swiper-pagination {
     margin-top: 30px;
