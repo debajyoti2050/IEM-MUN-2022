@@ -12,7 +12,7 @@ function NavbarFixed(props) {
     <Navbar collapseOnSelect expand="lg" className="navabar" variant="dark" fixed="top">
       <Container>
           <Navbar.Brand >
-              <img alt="" src={Logo1}  height="60"  className="d-inline-block align-top" />
+              <img alt="" src={Logo1}  height="60" className="d-inline-block align-top" />
               <img alt="" src={Logo} height="60" margin="0px  10px"className="d-inline-block align-top logo"/>
           </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
