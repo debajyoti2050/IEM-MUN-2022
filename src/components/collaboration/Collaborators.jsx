@@ -39,7 +39,7 @@ export default function Collaborators() {
           <div className="swiper-wrapper align-items-center">
             <>
               <Swiper
-                slidesPerView={6}
+                slidesPerView={5}
                 spaceBetween={40}
                 loop={true}
                 autoplay={{
