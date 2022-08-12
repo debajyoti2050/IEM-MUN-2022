@@ -12,6 +12,8 @@
   
   #footer .footer-top .footer-info {
     margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
   }
   
   #footer .footer-top .footer-info h3 {
