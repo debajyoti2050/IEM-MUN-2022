@@ -1,9 +1,10 @@
 import './dates.css'
 
 import React from 'react'
-import CountDownTimer from './CountDownTimer';
+import  Countdown from './Lund.jsx'
+
 export default function Dates() {
-  const hoursMinSecs = {hours:1, minutes: 20, seconds: 40}
+ 
   return (
     <section id="call-to-action" className="features">
     <div className="container" data-aos="fade-up">
@@ -22,7 +23,7 @@ export default function Dates() {
                 <h3>OCTOBER</h3>
                 <h3 >&nbsp;14th, 15th & 16th</h3>
                 <div classname="App">
-                <CountDownTimer hoursMinSecs={hoursMinSecs}/>
+                     <Countdown/>
                   </div>
               </div>
             </div>

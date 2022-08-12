@@ -7,6 +7,7 @@ import Header from "../components/header/Header";
 import Hero from "../components/hero/Hero";
 import Dates from "../components/importantDates/Dates";
 
+
 export default function Homepage() {
   return (
     <>
@@ -19,6 +20,7 @@ export default function Homepage() {
         <Contact />
       </main>
       <Footer />
+
     </>
   );
 }
