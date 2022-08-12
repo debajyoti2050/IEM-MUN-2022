@@ -38,10 +38,12 @@
     color: #18d26e
   }
     .countdown .card {
-      background: change-color(black);
+      background: #15b660;
+      color: #000;
+      font-weight: 600;
       display: inline-block;
-      margin: 10px;
+      margin: 0px;
       min-width: 100px;
-      padding: 20px 0;
+      padding: 15px 0;
   
     }
