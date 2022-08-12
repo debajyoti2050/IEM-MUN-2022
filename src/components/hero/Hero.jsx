@@ -34,18 +34,18 @@ export default function Hero() {
                   <h2
                     className="animate__animated animate__fadeInDown"
                     data-aos="fade-down"
-                    data-aos-delay="100"
+                    data-aos-delay="400"
                   >
                     <img height="300rem" src="MUN_Logo.png" alt="mun logo" />
                   </h2> 
-                  <h2 data-aos="fade-up" data-aos-delay="100">
+                  <h2 data-aos="fade-up" data-aos-delay="400">
                     MODEL UNITED NATIONS
                   </h2>
                   <a
                     href="/"
                     className="btn-get-started scrollto animate__animated animate__fadeInUp"
                     data-aos="fade-in-up"
-                    data-aos-delay="100"
+                    data-aos-delay="400"
                   >
                     Apply Now
                   </a>
