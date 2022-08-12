@@ -41,6 +41,13 @@ export default function Collaborators() {
               <Swiper
                 slidesPerView={5}
                 spaceBetween={40}
+                // breakpoints={{
+                //     768: {
+                //       // width: 768,
+                //       slidesPerView: 3,
+                //       spaceBetween:100,
+                //     },
+                //   }}
                 loop={true}
                 autoplay={{
                   delay: 2000,
@@ -53,24 +60,24 @@ export default function Collaborators() {
                 navigation={true}
                 modules={[Pagination, Navigation]}
               >
-                <SwiperSlide><div className="imgcenter"><img src={Applex} class="img-fluid" alt="" /></div></SwiperSlide>
-                <SwiperSlide><div className="imgcenter"><img src={CYIMUN} class="img-fluid" alt="" /></div></SwiperSlide>
-                <SwiperSlide><div className="imgcenter1"><img src={Greenlogo} class="img-fluid" alt="" /></div></SwiperSlide>
-                <SwiperSlide><div className="imgcenter"><img src={IDC} class="img-fluid" alt="" /></div></SwiperSlide>
-                <SwiperSlide><div className="imgcenter"><img src={IMC} class="img-fluid" alt="" /></div></SwiperSlide>
-                <SwiperSlide><div className="imgcenter"><img src={JMUN} class="img-fluid" alt="" /></div></SwiperSlide>
-                <SwiperSlide><div className="imgcenter"><img src={Logo1} class="img-fluid" alt="" /></div></SwiperSlide>
-                <SwiperSlide><div className="imgcenter"><img src={Logo2} class="img-fluid" alt="" /></div></SwiperSlide>
-                <SwiperSlide><div className="imgcenter"><img src={MUNA} class="img-fluid" alt="" /></div></SwiperSlide>
-                <SwiperSlide><div className="imgcenter"><img src={MUNAG} class="img-fluid" alt="" /></div></SwiperSlide>
-                <SwiperSlide><div className="imgcenter"><img src={Nincompoop} class="img-fluid" alt="" /></div></SwiperSlide>
-                <SwiperSlide><div className="imgcenter"><img src={OMUN} class="img-fluid" alt="" /></div></SwiperSlide>
-                <SwiperSlide><div className="imgcenter"><img src={Onuu} class="img-fluid" alt="" /></div></SwiperSlide>
-                <SwiperSlide><div className="imgcenter"><img src={RM} class="img-fluid" alt="" /></div></SwiperSlide>
-                <SwiperSlide><div className="imgcenter"><img src={UB} class="img-fluid" alt="" /></div></SwiperSlide>
-                <SwiperSlide><div className="imgcenter"><img src={INDBHU} class="img-fluid" alt="" /></div></SwiperSlide>
-                <SwiperSlide><div className="imgcenter1"><img src={UN75} class="img-fluid" alt="" /></div></SwiperSlide>
-                <SwiperSlide><div className="imgcenter"><img src={WPIMUN} class="img-fluid" alt="" /></div></SwiperSlide>
+                <SwiperSlide><div className="imgcenter"><img src={Applex} className="img-fluid" alt="" /></div></SwiperSlide>
+                <SwiperSlide><div className="imgcenter"><img src={CYIMUN} className="img-fluid" alt="" /></div></SwiperSlide>
+                <SwiperSlide><div className="imgcenter1"><img src={Greenlogo} className="img-fluid" alt="" /></div></SwiperSlide>
+                <SwiperSlide><div className="imgcenter"><img src={IDC} className="img-fluid" alt="" /></div></SwiperSlide>
+                <SwiperSlide><div className="imgcenter"><img src={IMC} className="img-fluid" alt="" /></div></SwiperSlide>
+                <SwiperSlide><div className="imgcenter"><img src={JMUN} className="img-fluid" alt="" /></div></SwiperSlide>
+                <SwiperSlide><div className="imgcenter"><img src={Logo1} className="img-fluid" alt="" /></div></SwiperSlide>
+                <SwiperSlide><div className="imgcenter"><img src={Logo2} className="img-fluid" alt="" /></div></SwiperSlide>
+                <SwiperSlide><div className="imgcenter"><img src={MUNA} className="img-fluid" alt="" /></div></SwiperSlide>
+                <SwiperSlide><div className="imgcenter"><img src={MUNAG} className="img-fluid" alt="" /></div></SwiperSlide>
+                <SwiperSlide><div className="imgcenter"><img src={Nincompoop} className="img-fluid" alt="" /></div></SwiperSlide>
+                <SwiperSlide><div className="imgcenter"><img src={OMUN} className="img-fluid" alt="" /></div></SwiperSlide>
+                <SwiperSlide><div className="imgcenter"><img src={Onuu} className="img-fluid" alt="" /></div></SwiperSlide>
+                <SwiperSlide><div className="imgcenter"><img src={RM} className="img-fluid" alt="" /></div></SwiperSlide>
+                <SwiperSlide><div className="imgcenter"><img src={UB} className="img-fluid" alt="" /></div></SwiperSlide>
+                <SwiperSlide><div className="imgcenter"><img src={INDBHU} className="img-fluid" alt="" /></div></SwiperSlide>
+                <SwiperSlide><div className="imgcenter1"><img src={UN75} className="img-fluid" alt="" /></div></SwiperSlide>
+                <SwiperSlide><div className="imgcenter"><img src={WPIMUN} className="img-fluid" alt="" /></div></SwiperSlide>
               </Swiper>
             </>
           </div>
