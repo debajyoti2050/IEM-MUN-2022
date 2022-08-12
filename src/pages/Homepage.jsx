@@ -8,9 +8,9 @@ import Header from "../components/header/Header";
 import Hero from "../components/hero/Hero";
 import Navbar from "../components/navbar/navbar";
 import Dates from "../components/importantDates/Dates";
-
 import AOS from "aos";
 import "aos/dist/aos.css";
+
 
 export default function Homepage() {
   return (
@@ -25,6 +25,7 @@ export default function Homepage() {
         <Contact />
       </main>
       <Footer />
+
     </>
   );
 }

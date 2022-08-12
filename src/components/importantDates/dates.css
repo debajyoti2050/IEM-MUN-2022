@@ -37,3 +37,11 @@
   .feature-box .h3{
     color: #18d26e
   }
+    .countdown .card {
+      background: change-color(black);
+      display: inline-block;
+      margin: 10px;
+      min-width: 100px;
+      padding: 20px 0;
+  
+    }
