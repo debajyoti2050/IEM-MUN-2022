@@ -1,10 +1,10 @@
 import React from 'react';
-import moment from 'moment';
+// import moment from 'moment';
 import "./dates.css"
 
 const endDate = new Date("2022-10-14T03:24:00");
 
-const Countdown = ({ }) => {
+const Countdown = ({}) => {
 
     const [[days, hours, mins, secs], setTime] = React.useState([0, 0, 0,0]);
     
