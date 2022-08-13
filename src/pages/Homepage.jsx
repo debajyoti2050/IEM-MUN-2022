@@ -17,7 +17,7 @@ export default function Homepage() {
   return (
     <>
       <main id="main">
-        <Navbar />
+        <Navbar homenav/>
         <Hero />
         <Dates />
         <About />

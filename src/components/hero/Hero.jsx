@@ -3,7 +3,7 @@ import HeroBG from "../../assets/BG_image.png";
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { Link } from "react-router-dom/cjs/react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function Hero() {
   useEffect(() => {
@@ -44,7 +44,7 @@ export default function Hero() {
                   </h2>
                   <Link to='/form'>
                   <a
-                    href="/"
+                    href="/form"
                     className="btn-get-started scrollto animate__animated animate__fadeInUp"
                     data-aos="fade-in-up"
                     data-aos-delay="400"

@@ -1,26 +1,22 @@
 import './App.css';
 import Homepage from './pages/Homepage';
-
+import Form from './components/applyform/Form'
 import "bootstrap/dist/css/bootstrap.min.css";
 import {
-  BrowserRouter as Router,
-  Switch,
+  BrowserRouter,
+  Routes,
   Route,
-  Link,
-  Redirect,
 } from "react-router-dom";
 
 
 function App() {
   return (
-    <Router>
-      <Switch>
-        <Route exact path='/'>
-          <Homepage/>
-        </Route>
-        
-      </Switch>
-    </Router>
+   <BrowserRouter>
+   <Routes>
+   <Route exact path="/" element={<Homepage/>}/>
+   <Route exact path="/form" element={<Form/>}/>
+   </Routes>
+   </BrowserRouter>
   );
 }
 
