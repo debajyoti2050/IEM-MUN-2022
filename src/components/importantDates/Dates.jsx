@@ -22,7 +22,7 @@ export default function Dates() {
               <div className="feature-box align-items-center text-center">
                 <h3>OCTOBER</h3>
                 <h3 >&nbsp;14th, 15th & 16th</h3>
-                <div classname="App">
+                <div className="App">
                      <Countdown/>
                   </div>
               </div>
