@@ -10,6 +10,7 @@ import Navbar from "../components/navbar/navbar";
 import Dates from "../components/importantDates/Dates";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Map from "../components/gmap/Map";
 
 
 export default function Homepage() {
@@ -24,6 +25,7 @@ export default function Homepage() {
         <Collaborators/>
         <Contact />
       </main>
+      <Map/>
       <Footer />
 
     </>
