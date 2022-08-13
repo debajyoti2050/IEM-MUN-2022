@@ -26,7 +26,7 @@ export default function About() {
                 to the occasion and propose solutions to geopolitical matters.
               </p>
             </div>
-            <div className="col-lg-5 d-flex align-items-center justify-content-center about-img">
+            <div className="col-lg-6 d-flex align-items-center justify-content-center about-img">
               <img 
                 src={MUNLogo}
                 
