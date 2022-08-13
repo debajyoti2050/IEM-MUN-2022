@@ -3,7 +3,7 @@ import INCabinet from "../../assets/committee/IndianCabinet Ministry of Finance.
 import UNOcean from "../../assets/committee/UN OCEAN CONFERENCE.png";
 import UNGA from "../../assets/committee/UNGA.png";
 import UNITAR from "../../assets/committee/UNITAR.png";
-
+import IP  from "../../assets/committee/IP.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper";
 import "swiper/css";
@@ -137,6 +137,31 @@ export default function Committee() {
                       <br />
                       Come join us in debates and conversations and strive to
                       lead your team to victory!
+                    </p>
+                  </div>
+                </SwiperSlide>
+                  <SwiperSlide>
+                  <div className="testimonial-item">
+                    <img src={INCabinet} className="testimonial-img" alt="" />
+                    <h3>INTERNATIONAL PRESS (IP)</h3>
+                    <p>
+                     "Freedom of the press is the mortar that binds together the bricks of democracy- 
+                     and it is also the open window embedded in those bricks." - Shashi Tharoor
+
+                      <br />
+                      <br />
+                      IEM MUN 2022 is delighted to bring to you the International Press delegation. 
+                      The committee is assigned to unravel the day to day activities in IEM-MUN. 
+                      It is an act of journalism that allows its members to display their writing, 
+                      editing and presentation skills. International Press acts as the eyes for general public
+                       that gyrates around reporting of all the debates and other events in IEM-MUN 2022
+
+                      <br />
+                    Block your calendars on the 14th, 15th and 16th of October, 2022, 
+                    for an eventful weekend of discourse and exchange.
+
+
+
                     </p>
                   </div>
                 </SwiperSlide>
