@@ -21,7 +21,7 @@ function App() {
     })
   }
   const findFormErrors = () => {
-    const { name, Email, phno, prevMun,delMun, awards } = formData
+    const { name, Email, phno, prevMun,delMun, awards ,awardsDel} = formData
     const newErrors = {}
     // name errors
     if ( !name || name === '' ) newErrors.name = 'cannot be blank!'
@@ -36,6 +36,7 @@ function App() {
     
  if ( !delMun || delMun === '' ) newErrors.delMun = 'cannot be blank!'
  if ( !awards || awards === '' ) newErrors.awards = 'cannot be blank!'
+ if ( !awardsDel || awardsDel === '' ) newErrors.awardsDel = 'cannot be blank!'
     return newErrors
   }
    const handleSubmit = e => {
@@ -194,40 +195,676 @@ function App() {
             </fieldset>
             <br />
 
+ <br/>
+          <fieldset>
+                <legend>Branch </legend>
+                <input 
+                    type="radio"
+                    id="B"
+                    name="B"
+                    value="CSE"
+                    checked={formData.B === "CSE"}
+                    onChange={handleChange}
+                />
+                <label htmlFor="CSE">CSE</label>
+                <br />
+                
+                <input 
+                    type="radio"
+                    id="B"
+                    name="B"
+                    value="ECE"
+                    checked={formData.B === "2nd"}
+                    onChange={handleChange}
+                />
+                <label htmlFor="2nd">2nd</label>
+                <br />
+                <input 
+                    type="radio"
+                    id="B"
+                    name="B"
+                    value="CSE/IOT"
+                    checked={formData.B === "CSE/IOT"}
+                    onChange={handleChange}
+                />
+                <label htmlFor="CSE/IOT">CSE/IOT</label>
+                <br />
+               <input 
+                    type="radio"
+                    id="B"
+                    name="B"
+                    value="CSE/AIML"
+                    checked={formData.B === "CSE/AIML"}
+                    onChange={handleChange}
+                />
+                <label htmlFor="CSE/AIML">CSE/AIML</label>
+
+
+                <br />
+                
+               <input 
+                    type="radio"
+                    id="B"
+                    name="B"
+                    value="CSE/CSBS"
+                    checked={formData.B === "CSE/CSBS"}
+                    onChange={handleChange}
+                />
+                <label htmlFor="CSE/CSBS">CSE/CSBS</label>
+
+
+                <br />
+
+
+                <input 
+                    type="radio"
+                    id="B"
+                    name="B"
+                    value="IT"
+                    checked={formData.B === "IT"}
+                    onChange={handleChange}
+                />
+                <label htmlFor="IT">IT</label>
+
+
+                <br />
+
+                <input 
+                    type="radio"
+                    id="B"
+                    name="B"
+                    value="MECH"
+                    checked={formData.B === "MECH"}
+                    onChange={handleChange}
+                />
+                <label htmlFor="MECH">MECH</label>
+
+
+                <br />
+          <input 
+                    type="radio"
+                    id="B"
+                    name="B"
+                    value="EE"
+                    checked={formData.B === "EE"}
+                    onChange={handleChange}
+                />
+                <label htmlFor="EE">EE</label>
+
+
+                <br />
+                <input 
+                    type="radio"
+                    id="B"
+                    name="B"
+                    value="AI"
+                    checked={formData.B === "AI"}
+                    onChange={handleChange}
+                />
+                <label htmlFor="AI">AI</label>
+
+
+                <br />
+
+                <input 
+                    type="radio"
+                    id="BCA"
+                    name="B"
+                    value="BCA"
+                    checked={formData.B === "BCA"}
+                    onChange={handleChange}
+                />
+                <label htmlFor="BCA">BCA</label>
+
+
+                <br />
+                <input 
+                    type="radio"
+                    id="Double"
+                    name="B"
+                    value="BBA"
+                    checked={formData.B === "BBA"}
+                    onChange={handleChange}
+                />
+                <label htmlFor="BBA">BBA</label>
+
+
+                <br />
+                <input 
+                    type="radio"
+                    id="Double"
+                    name="B"
+                    value="MBA"
+                    checked={formData.B === "MBA"}
+                    onChange={handleChange}
+                />
+                <label htmlFor="MBA">MBA</label>
+
+
+                <br />
+            </fieldset>
+            <br />
+
+               <Form.Group>
+          <Form.Label>previous year MUN experience*</Form.Label>
+          <Form.Control 
+            type='number' 
+            onChange={ e => setField('prevMun', e.target.value) }
+            isInvalid={ !!errors.prevMun }
+          />
+           <Form.Control.Feedback type='invalid'>{ errors.prevMun }</Form.Control.Feedback>
+        </Form.Group>
+
+        
+               <Form.Group>
+          <Form.Label>Detailed MUN experience*</Form.Label>
+          <Form.Control 
+            type='text' 
+            onChange={ e => setField('delMun', e.target.value) }
+            isInvalid={ !!errors.delMun }
+          />
+           <Form.Control.Feedback type='invalid'>{ errors.delMun }</Form.Control.Feedback>
+        </Form.Group>
+
+<Form.Group>
+          <Form.Label>Awards*</Form.Label>
+          <Form.Control 
+            type='number' 
+            onChange={ e => setField('awards', e.target.value) }
+            isInvalid={ !!errors.awards }
+          />
+           <Form.Control.Feedback type='invalid'>{ errors.awards }</Form.Control.Feedback>
+        </Form.Group>
+        <Form.Group>
+          <Form.Label>Awards Details*</Form.Label>
+          <Form.Control 
+            type='number' 
+            onChange={ e => setField('awards', e.target.value) }
+            isInvalid={ !!errors.awardsDel }
+          />
+           <Form.Control.Feedback type='invalid'>{ errors.awardsDel }</Form.Control.Feedback>
+        </Form.Group>
+
+
+
    
                     <Form.Group
                         className="mb-3"
-                        controlId="formBasicPassword"
+                        controlId="formBasicCoDeligate"
                       >
-                        <Form.Label>Password</Form.Label>
-                        <Form.Control type="password" placeholder="Password" />
+                        <Form.Label>Co-Deligate(if any)</Form.Label>
+                        <Form.Control type="text" placeholder="Enter Co-delegate name " />
                       </Form.Group>
                       <Form.Group
                         className="mb-3"
-                        controlId="formBasicPassword"
+                        controlId="formBasicCoEmail"
                       >
-                        <Form.Label>Confirm Password</Form.Label>
-                        <Form.Control type="password" placeholder="Password" />
+                        <Form.Label>Co Deligate Email(if any)</Form.Label>
+                        <Form.Control type="email" placeholder="Enter mail" />
                       </Form.Group>
                       <Form.Group
                         className="mb-3"
                         controlId="formBasicCheckbox"
                       >
                       </Form.Group>
-                      <div className="d-grid">
-                        <Button variant="primary" type="submit">
-                          Create Account
-                        </Button>
-                      </div>
+
+                   <Form.Group
+                        className="mb-3"
+                        controlId="formBasicphno"
+                      >
+                        <Form.Label>Co Deligate phone no(if any)</Form.Label>
+                        <Form.Control type="number" placeholder="Enter phone no" />
+                      </Form.Group>
+                      <Form.Group
+                        className="mb-3"
+                        controlId="formBasicCheckbox"
+                      >
+                      </Form.Group>
+<fieldset>
+                <legend>Year of Study(for Co-deleget) </legend>
+                <input 
+                    type="radio"
+                    id="1st"
+                    name="deligation"
+                    value="1st"
+                    checked={formData.Yos === "1st"}
+                    onChange={handleChange}
+                />
+                <label htmlFor="1st">1st</label>
+                <br />
+                
+                <input 
+                    type="radio"
+                    id="2nd"
+                    name="Yos"
+                    value="2nd"
+                    checked={formData.Yos === "2nd"}
+                    onChange={handleChange}
+                />
+                <label htmlFor="2nd">2nd</label>
+                <br />
+                <input 
+                    type="radio"
+                    id="3rd"
+                    name="Yos"
+                    value="3rd"
+                    checked={formData.Yos === "3rd"}
+                    onChange={handleChange}
+                />
+                <label htmlFor="3rd">3rd</label>
+                <br />
+               <input 
+                    type="radio"
+                    id="Double"
+                    name="Yos"
+                    value="4th"
+                    checked={formData.Yos === "4th"}
+                    onChange={handleChange}
+                />
+                <label htmlFor="4th">4th</label>
+                <br />
+            </fieldset>
+            <br />
+
+ <br/>
+          <fieldset>
+                <legend>Branch(for Co-deleget) </legend>
+                <input 
+                    type="radio"
+                    id="B"
+                    name="B"
+                    value="CSE"
+                    checked={formData.B === "CSE"}
+                    onChange={handleChange}
+                />
+                <label htmlFor="CSE">CSE</label>
+                <br />
+                
+                <input 
+                    type="radio"
+                    id="B"
+                    name="B"
+                    value="ECE"
+                    checked={formData.B === "2nd"}
+                    onChange={handleChange}
+                />
+                <label htmlFor="2nd">2nd</label>
+                <br />
+                <input 
+                    type="radio"
+                    id="B"
+                    name="B"
+                    value="CSE/IOT"
+                    checked={formData.B === "CSE/IOT"}
+                    onChange={handleChange}
+                />
+                <label htmlFor="CSE/IOT">CSE/IOT</label>
+                <br />
+               <input 
+                    type="radio"
+                    id="B"
+                    name="B"
+                    value="CSE/AIML"
+                    checked={formData.B === "CSE/AIML"}
+                    onChange={handleChange}
+                />
+                <label htmlFor="CSE/AIML">CSE/AIML</label>
+
+
+                <br />
+                
+               <input 
+                    type="radio"
+                    id="B"
+                    name="B"
+                    value="CSE/CSBS"
+                    checked={formData.B === "CSE/CSBS"}
+                    onChange={handleChange}
+                />
+                <label htmlFor="CSE/CSBS">CSE/CSBS</label>
+
+
+                <br />
+
+
+                <input 
+                    type="radio"
+                    id="B"
+                    name="B"
+                    value="IT"
+                    checked={formData.B === "IT"}
+                    onChange={handleChange}
+                />
+                <label htmlFor="IT">IT</label>
+
+
+                <br />
+
+                <input 
+                    type="radio"
+                    id="B"
+                    name="B"
+                    value="MECH"
+                    checked={formData.B === "MECH"}
+                    onChange={handleChange}
+                />
+                <label htmlFor="MECH">MECH</label>
+
+
+                <br />
+          <input 
+                    type="radio"
+                    id="B"
+                    name="B"
+                    value="EE"
+                    checked={formData.B === "EE"}
+                    onChange={handleChange}
+                />
+                <label htmlFor="EE">EE</label>
+
+
+                <br />
+                <input 
+                    type="radio"
+                    id="B"
+                    name="B"
+                    value="AI"
+                    checked={formData.B === "AI"}
+                    onChange={handleChange}
+                />
+                <label htmlFor="AI">AI</label>
+
+
+                <br />
+
+                <input 
+                    type="radio"
+                    id="BCA"
+                    name="B"
+                    value="BCA"
+                    checked={formData.B === "BCA"}
+                    onChange={handleChange}
+                />
+                <label htmlFor="BCA">BCA</label>
+
+
+                <br />
+                <input 
+                    type="radio"
+                    id="Double"
+                    name="B"
+                    value="BBA"
+                    checked={formData.B === "BBA"}
+                    onChange={handleChange}
+                />
+                <label htmlFor="BBA">BBA</label>
+
+
+                <br />
+                <input 
+                    type="radio"
+                    id="Double"
+                    name="B"
+                    value="MBA"
+                    checked={formData.B === "MBA"}
+                    onChange={handleChange}
+                />
+                <label htmlFor="MBA">MBA</label>
+
+
+                <br />
+            </fieldset>
+            <br />
+               <Form.Group
+                        className="mb-3"
+                        controlId="formBasicCoEmail"
+                      >
+                        <Form.Label>Previous MUN experience(if any)</Form.Label>
+                        <Form.Control type="number" placeholder="Enter mail" />
+                      </Form.Group>
+
+                       <Form.Group
+                        className="mb-3"
+                        controlId="formBasicCoEmail"
+                      >
+                        <Form.Label>Details about previous MUN experience of Co-Delegate</Form.Label>
+                        <Form.Control type="text" placeholder="Enter mail" />
+                      </Form.Group>
+                     <Form.Group
+                        className="mb-3"
+                        controlId="formBasicCoEmail"
+                      >
+                        <Form.Label>No of Awards(if any)</Form.Label>
+                        <Form.Control type="number" placeholder="Enter mail" />
+                      </Form.Group>
+                     <Form.Group
+                        className="mb-3"
+                        controlId="formBasicCoEmail"
+                      >
+                        <Form.Label>Details about Awards of co-delegate(if any)</Form.Label>
+                        <Form.Control type="number" placeholder="Enter mail" />
+                      </Form.Group>
+
+
+<fieldset>
+                <legend>1st committee Preference* </legend>
+                <input 
+                    type="radio"
+                    id="cp"
+                    name="cp"
+                    value="unga"
+                    checked={formData.cp === "unga"}
+                    onChange={handleChange}
+                />
+                <label htmlFor="1st">UNGA - United Nations General Assembly</label>
+                <br />
+                
+                <input 
+                    type="radio"
+                    id="cp1"
+                    name="cp"
+                    value="unitar"
+                    checked={formData.cp === "unitar"}
+                    onChange={handleChange}
+                />
+                <label htmlFor="2nd">UNITAR - United Nations Institute for Training & Research</label>
+                <br />
+                <input 
+                    type="radio"
+                    id="cp"
+                    name="cp"
+                    value="3rd"
+                    checked={formData.cp === "3rd"}
+                    onChange={handleChange}
+                />
+                <label htmlFor="3rd">UN Ocean Conference</label>
+                <br />
+               <input 
+                    type="radio"
+                    id="cp2"
+                    name="cp"
+                    value="UN"
+                    checked={formData.cp === "UN"}
+                    onChange={handleChange}
+                />
+                <label htmlFor="UN">Indian Cabinet - Ministry of Finance</label>
+                <br />
+            </fieldset>
+            <br />
+
+            <fieldset>
+                <legend>2nd committee Preference* </legend>
+                <input 
+                    type="radio"
+                    id="cp"
+                    name="cp"
+                    value="unga"
+                    checked={formData.cp === "unga"}
+                    onChange={handleChange}
+                />
+                <label htmlFor="1st">UNGA - United Nations General Assembly</label>
+                <br />
+                
+                <input 
+                    type="radio"
+                    id="cp1"
+                    name="cp"
+                    value="unitar"
+                    checked={formData.cp === "unitar"}
+                    onChange={handleChange}
+                />
+                <label htmlFor="2nd">UNITAR - United Nations Institute for Training & Research</label>
+                <br />
+                <input 
+                    type="radio"
+                    id="cp"
+                    name="cp"
+                    value="3rd"
+                    checked={formData.cp === "3rd"}
+                    onChange={handleChange}
+                />
+                <label htmlFor="3rd">UN Ocean Conference</label>
+                <br />
+               <input 
+                    type="radio"
+                    id="cp2"
+                    name="cp"
+                    value="UN"
+                    checked={formData.cp === "UN"}
+                    onChange={handleChange}
+                />
+                <label htmlFor="UN">Indian Cabinet - Ministry of Finance</label>
+                <br />
+            </fieldset>
+            <br />
+            <fieldset>
+                <legend>3rd committee Preference* </legend>
+                <input 
+                    type="radio"
+                    id="cp"
+                    name="cp"
+                    value="unga"
+                    checked={formData.cp === "unga"}
+                    onChange={handleChange}
+                />
+                <label htmlFor="1st">UNGA - United Nations General Assembly</label>
+                <br />
+                
+                <input 
+                    type="radio"
+                    id="cp1"
+                    name="cp"
+                    value="unitar"
+                    checked={formData.cp === "unitar"}
+                    onChange={handleChange}
+                />
+                <label htmlFor="2nd">UNITAR - United Nations Institute for Training & Research</label>
+                <br />
+                <input 
+                    type="radio"
+                    id="cp"
+                    name="cp"
+                    value="3rd"
+                    checked={formData.cp === "3rd"}
+                    onChange={handleChange}
+                />
+                <label htmlFor="3rd">UN Ocean Conference</label>
+                <br />
+               <input 
+                    type="radio"
+                    id="cp2"
+                    name="cp"
+                    value="UN"
+                    checked={formData.cp === "UN"}
+                    onChange={handleChange}
+                />
+                <label htmlFor="UN">Indian Cabinet - Ministry of Finance</label>
+                <br />
+            </fieldset>
+            <br />
+
+             <fieldset>
+                <legend>4th committee Preference* </legend>
+                <input 
+                    type="radio"
+                    id="cp"
+                    name="cp"
+                    value="unga"
+                    checked={formData.cp === "unga"}
+                    onChange={handleChange}
+                />
+                <label htmlFor="1st">UNGA - United Nations General Assembly</label>
+                <br />
+                
+                <input 
+                    type="radio"
+                    id="cp1"
+                    name="cp"
+                    value="unitar"
+                    checked={formData.cp === "unitar"}
+                    onChange={handleChange}
+                />
+                <label htmlFor="2nd">UNITAR - United Nations Institute for Training & Research</label>
+                <br />
+                <input 
+                    type="radio"
+                    id="cp"
+                    name="cp"
+                    value="3rd"
+                    checked={formData.cp === "3rd"}
+                    onChange={handleChange}
+                />
+                <label htmlFor="3rd">UN Ocean Conference</label>
+                <br />
+               <input 
+                    type="radio"
+                    id="cp2"
+                    name="cp"
+                    value="UN"
+                    checked={formData.cp === "UN"}
+                    onChange={handleChange}
+                />
+                <label htmlFor="UN">Indian Cabinet - Ministry of Finance</label>
+                <br />
+            </fieldset>
+            <br />
+<fieldset>
+                <legend>4th committee Preference* </legend>
+
+<input 
+                    type="radio"
+                    id="mp"
+                    name="mp"
+                    value="3rd"
+                    checked={formData.mp === "3rd"}
+                    onChange={handleChange}
+                />
+                <label htmlFor="3rd">Yes</label>
+                <br />
+               <input 
+                    type="radio"
+                    id="mp"
+                    name="mp"
+                    value="UN"
+                    checked={formData.mp === "UN"}
+                    onChange={handleChange}
+                />
+                <label htmlFor="UN">No</label>
+                <br />
+
+</fieldset>
+  <Form.Group
+       className="mb-3"
+      controlId="ref"
+      >
+<Form.Label>Reference ID(if any)</Form.Label>
+                        <Form.Control type="text" placeholder="Enter please(if any)" />
+                      </Form.Group>
+
+
+                       <Button type='submit' onClick={ handleSubmit }>Submit please</Button>
                     </Form>
-                    <div className="mt-3">
-                      <p className="mb-0  text-center">
-                      Already have an account??{" "}
-                        <a href="{''}" className="text-primary fw-bold">
-                          Sign In
-                        </a>
-                      </p>
-                    </div>
+                    
                   </div>
                 </div>
               </Card.Body>
