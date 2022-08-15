@@ -11,7 +11,7 @@ const committeedesc = () => {
     <>
       <NavbarFixed />
       <section id="coommitteedesc" className="pt-5">
-        <div className="container">
+        <div className="container pt-5">
           <div className="section-header">
             <h3>Our Committees</h3>
           </div>
