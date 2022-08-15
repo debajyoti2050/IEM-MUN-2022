@@ -222,13 +222,13 @@ function App() {
 
                           <input
                             type="radio"
-                            id="B"
+                            id="ECE"
                             name="B"
                             value="ECE"
-                            checked={formData.B === "2nd"}
+                            checked={formData.B === "ECE"}
                             onChange={handleChange}
                           />
-                          <label htmlFor="2nd">2nd</label>
+                          <label htmlFor="ECE">ECE</label>
                           <br />
                           <input
                             type="radio"
