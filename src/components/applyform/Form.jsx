@@ -74,46 +74,56 @@ function App() {
   return (
     <>
       <NavbarFixed />
-
-      <div className="form">
-        <Container>
-          <Row className="vh-100 d-flex justify-content-center align-items-center">
-            <Col md={8} lg={6} xs={12}>
-              <div className="border border-2 border-primary"></div>
-              <Card className="shadow px-4">
-                <Card.Body>
-                  <div className="mb-3 mt-md-4 mt-lg-0">
-                    <h2 className="fw-bold mb-2 text-center text-uppercase ">
-                      Apply For IEM-MUN
-                    </h2>
-
-                    <div className="mb-3">
-                      <Form>
+      
+      <div>
+      <Container>
+        <Row className="vh-100 d-flex justify-content-center align-items-center">
+          <Col md={8} lg={6} xs={12}>
+            
+          <div className="border border-2 border-primary"></div>
+            <Card className="shadow px-4">
+              <Card.Body>
+                
+                
+                
+                <div className="mb-3 mt-md-4">
+                  <h2 className="fw-bold mb-2 text-center text-uppercase ">Apply For IEM-MUN</h2>
+                  
+                  <div className="mb-3">
+                    <Form>
+                      
                         <fieldset>
-                          <legend>Deligation </legend>
-                          <input
-                            type="radio"
-                            id="single"
-                            name="deligation"
-                            value="single"
-                            checked={formData.deligation === "single"}
-                            onChange={handleChange}
-                          />
-                          <label htmlFor="single">Single</label>
-                          <br />
+                <legend>delegation </legend>
+                <input 
+                    type="radio"
+                    id="single"
+                    name="deligation"
+                    value="single"
+                    checked={formData.deligation === "single"}
+                    onChange={handleChange}
+                />
+                <label htmlFor="single">single</label>
+                <br />
+                
+                <input 
+                    type="radio"
+                    id="Double"
+                    name="deligation"
+                    value="Double"
+                    checked={formData.deligation === "Double"}
+                    onChange={handleChange}
+                />
+                <label htmlFor="Double">Double</label>
+                <br />
+                
+               
+            </fieldset>
+            <br />
 
-                          <input
-                            type="radio"
-                            id="Double"
-                            name="deligation"
-                            value="Double"
-                            checked={formData.deligation === "Double"}
-                            onChange={handleChange}
-                          />
-                          <label htmlFor="Double">Double</label>
-                          <br />
-                        </fieldset>
-                        <br />
+                      
+
+                     
+    
 
                         <Form.Group>
                           <Form.Label>Name*</Form.Label>
@@ -129,16 +139,14 @@ function App() {
 
                         <Form.Group className="mb-3" controlId="formBasicEmail">
                           <Form.Label>Email*</Form.Label>
-                          <Form.Control
-                            type="text"
-                            onChange={(e) => setField("Email", e.target.value)}
-                            isInvalid={!!errors.Email}
-                          />
-                          <Form.Control.Feedback type="invalid">
-                            {errors.Email}
-                          </Form.Control.Feedback>
-                        </Form.Group>
-                        <br />
+          <Form.Control 
+            type='text' 
+            onChange={ e => setField('Email', e.target.value) }
+            isInvalid={ !!errors.Email }
+          />
+           <Form.Control.Feedback type='invalid'>{ errors.Email }</Form.Control.Feedback>
+   </Form.Group>
+   <br/>
 
                         <Form.Group className="mb-3" controlId="formBasicEmail">
                           <Form.Label>Contact No*</Form.Label>
@@ -863,47 +871,48 @@ function App() {
                         <fieldset>
                           <legend>4th committee Preference* </legend>
 
-                          <input
-                            type="radio"
-                            id="mp"
-                            name="mp"
-                            value="3rd"
-                            checked={formData.mp === "3rd"}
-                            onChange={handleChange}
-                          />
-                          <label htmlFor="3rd">Yes</label>
-                          <br />
-                          <input
-                            type="radio"
-                            id="mp"
-                            name="mp"
-                            value="UN"
-                            checked={formData.mp === "UN"}
-                            onChange={handleChange}
-                          />
-                          <label htmlFor="UN">No</label>
-                          <br />
-                        </fieldset>
-                        <Form.Group className="mb-3" controlId="ref">
-                          <Form.Label>Reference ID(if any)</Form.Label>
-                          <Form.Control
-                            type="text"
-                            placeholder="Enter please(if any)"
-                          />
-                        </Form.Group>
+<input 
+                    type="radio"
+                    id="mp"
+                    name="mp"
+                    value="3rd"
+                    checked={formData.mp === "3rd"}
+                    onChange={handleChange}
+                />
+                <label htmlFor="3rd">Yes</label>
+                <br />
+               <input 
+                    type="radio"
+                    id="mp"
+                    name="mp"
+                    value="UN"
+                    checked={formData.mp === "UN"}
+                    onChange={handleChange}
+                />
+                <label htmlFor="UN">No</label>
+                <br />
 
-                        <Button type="submit" onClick={handleSubmit}>
-                          Submit please
-                        </Button>
-                      </Form>
-                    </div>
+</fieldset>
+  <Form.Group
+       className="mb-3"
+      controlId="ref"
+      >
+<Form.Label>Reference ID(if any)</Form.Label>
+                        <Form.Control type="text" placeholder="Enter please(if any)" />
+                      </Form.Group>
+
+
+                       <Button type='submit' onClick={ handleSubmit }>Submit please</Button>
+                    </Form>
+                    
                   </div>
-                </Card.Body>
-              </Card>
-            </Col>
-          </Row>
-        </Container>
-      </div>
+                </div>
+              </Card.Body>
+            </Card>
+          </Col>
+        </Row>
+      </Container>
+    </div>
     </>
   );
 }
