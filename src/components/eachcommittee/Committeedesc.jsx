@@ -1,17 +1,29 @@
-import React from "react";
+import React,{useEffect} from "react";
 
 import "./committeedesc.css";
 import Data from "./data";
 import Card from "./Card";
 import NavbarFixed from "../navbar/navbar";
 import Footer from "../footer/Footer";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
-const committeedesc = () => {
+const Committeedesc = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
+
+      useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+      },[]);
+
   return (
     <>
       <NavbarFixed />
       <section id="coommitteedesc" className="pt-5">
-        <div className="container pt-5">
+        <div className="container pt-5" data-aos="fade-up" data-aos-delay="600">
           <div className="section-header">
             <h3>Our Committees</h3>
           </div>
@@ -110,4 +122,4 @@ const committeedesc = () => {
   );
 };
 
-export default committeedesc;
+export default Committeedesc;

@@ -3,7 +3,7 @@ import React from 'react'
 export default function Card(props) {
   return (
     <div className="container pb-5">
-            <div className="row">
+            <div className="row"data-aos="fade-up" data-aos-delay="600">
                 <div className="col-lg-4 psimage">
                     <img src={props.image} className="imgsz" alt=""/>
                 </div>
@@ -18,7 +18,7 @@ export default function Card(props) {
                     </p>
                 </div>
             </div>
-            <div className="row">
+            <div className="row" data-aos="fade-up" data-aos-delay="600">
             <div class="d-flex justify-content-start">
                 <div className="pt-1">
                     <h3>Agendas</h3>
@@ -30,7 +30,7 @@ export default function Card(props) {
                     </p>
                 </div>
             </div>
-            <div className="row">
+            <div className="row" data-aos="fade-up" data-aos-delay="600">
             <div class="d-flex justify-content-start">
                 <div className="pt-1">
                     <h3>Guidelines</h3>
@@ -46,7 +46,7 @@ export default function Card(props) {
                     </p>
                 </div>
             </div>
-            <div className="row single">
+            <div className="row single" data-aos="fade-up" data-aos-delay="600">
             <div class="d-flex justify-content-start">
                 <div className="pt-1">
                     <h3>Speakers</h3>
@@ -58,7 +58,9 @@ export default function Card(props) {
                 <div className="col-lg-4 person"><div className='imgcenter'><img src={props.s2img} alt=""/></div>
                     <div className="info mt-2"><h3>{props.s2name}</h3><p>-Vice Chairperson</p></div>
                 </div>
+
             </div>
+            <hr/>
         </div>
   )
 }
