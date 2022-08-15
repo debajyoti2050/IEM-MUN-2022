@@ -65,6 +65,14 @@ export default function Committee() {
                       admitting new members and the UN budget, among others, are
                       taken by the UNGA.
                     </p>
+                    <a
+                    href="/"
+                    className="btn-get-started scrollto animate__animated animate__fadeInUp"
+                    data-aos="fade-in-up"
+                    data-aos-delay="400"
+                  >
+                    Apply Now
+                  </a>
                   </div>
                 </SwiperSlide>
 
