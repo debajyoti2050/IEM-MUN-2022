@@ -75,7 +75,7 @@ function App() {
     <>
       <NavbarFixed />
       
-      <div>
+      <div className="form">
       <Container>
         <Row className="vh-100 d-flex justify-content-center align-items-center">
           <Col md={8} lg={6} xs={12}>
@@ -86,14 +86,14 @@ function App() {
                 
                 
                 
-                <div className="mb-3 mt-md-4">
+                <div className="mb-3 mt-md-4 mt-lg-0">
                   <h2 className="fw-bold mb-2 text-center text-uppercase ">Apply For IEM-MUN</h2>
                   
                   <div className="mb-3">
                     <Form>
                       
                         <fieldset>
-                <legend>delegation </legend>
+                <legend>Delegation </legend>
                 <input 
                     type="radio"
                     id="single"
@@ -102,7 +102,7 @@ function App() {
                     checked={formData.deligation === "single"}
                     onChange={handleChange}
                 />
-                <label htmlFor="single">single</label>
+                <label htmlFor="single">Single</label>
                 <br />
                 
                 <input 
