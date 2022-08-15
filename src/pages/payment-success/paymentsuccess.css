@@ -1,0 +1,65 @@
+body
+{
+    background:#f2f2f2;
+}
+
+.payment
+{
+    border:1px solid #f2f2f2;
+    height:280px;
+    border-radius:20px;
+    background:#fff;
+}
+.successpayment_header
+{
+   background:rgb(41, 197, 6);
+   padding:20px;
+   border-radius:20px 20px 0px 0px;
+   
+}
+
+.check
+{
+   margin:0px auto;
+   width:50px;
+   height:50px;
+   border-radius:100%;
+   background:#fff;
+   text-align:center;
+}
+
+.check i
+{
+   vertical-align:middle;
+   line-height:50px;
+   font-size:30px;
+}
+
+.successcontent 
+{
+    text-align:center;
+}
+
+.successcontent  h1
+{
+    font-size:25px;
+    padding-top:25px;
+}
+
+.successcontent a
+{
+    width:200px;
+    height:35px;
+    color:#fff;
+    border-radius:30px;
+    padding:5px 10px;
+    background:rgb(41, 197, 6);
+    transition:all ease-in-out 0.3s;
+    text-decoration: none;
+}
+
+.successcontent a:hover
+{
+    text-decoration:none;
+    background:#000;
+}
