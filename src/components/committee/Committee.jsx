@@ -11,6 +11,7 @@ import "swiper/css/pagination";
 import SwiperCore, { Autoplay } from "swiper";
 
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Committee() {
   SwiperCore.use([Autoplay]);
@@ -21,11 +22,7 @@ export default function Committee() {
           <h3>COMMITTEE</h3>
         </header>
 
-        <div
-          className="testimonials-slider swiper"
-          data-aos="fade-up"
-          data-aos-delay="100"
-        >
+        <div className="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100" >
           <div className="swiper-wrapper">
             <>
               <Swiper
@@ -65,14 +62,11 @@ export default function Committee() {
                       admitting new members and the UN budget, among others, are
                       taken by the UNGA.
                     </p>
-                    <a
-                    href="/"
-                    className="btn-get-started scrollto animate__animated animate__fadeInUp"
-                    data-aos="fade-in-up"
-                    data-aos-delay="400"
-                  >
-                    Apply Now
-                  </a>
+                    <Link to='/committeedesc'>
+                      <a href="/committeedesc" className="btn-get-started scrollto " data-aos="fade-in-up" data-aos-delay="400">
+                        Explore More
+                      </a>
+                    </Link>
                   </div>
                 </SwiperSlide>
 
@@ -98,6 +92,9 @@ export default function Committee() {
                       to support country level action for shaping a better
                       future.
                     </p>
+                    <a href="/" className="btn-get-started scrollto " data-aos="fade-in-up" data-aos-delay="400">
+                      Explore More
+                    </a>
                   </div>
                 </SwiperSlide>
 
@@ -123,6 +120,9 @@ export default function Committee() {
                       respective governing bodies. <br />
                       Let’s join hands to preserve the oceans which sustain us.
                     </p>
+                    <a href="/" className="btn-get-started scrollto " data-aos="fade-in-up" data-aos-delay="400">
+                      Explore More
+                    </a>
                   </div>
                 </SwiperSlide>
 
@@ -146,6 +146,9 @@ export default function Committee() {
                       Come join us in debates and conversations and strive to
                       lead your team to victory!
                     </p>
+                    <a href="/" className="btn-get-started scrollto " data-aos="fade-in-up" data-aos-delay="400">
+                      Explore More
+                    </a>
                   </div>
                 </SwiperSlide>
                   <SwiperSlide>
@@ -167,10 +170,10 @@ export default function Committee() {
                       <br />
                     Block your calendars on the 14th, 15th and 16th of October, 2022, 
                     for an eventful weekend of discourse and exchange.
-
-
-
                     </p>
+                    <a href="/" className="btn-get-started scrollto " data-aos="fade-in-up" data-aos-delay="400">
+                      Explore More
+                    </a>
                   </div>
                 </SwiperSlide>
               </Swiper>
