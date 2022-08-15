@@ -662,49 +662,49 @@ function App() {
                           <legend>1st committee Preference* </legend>
                           <input
                             type="radio"
-                            id="cp"
+                            id="unga"
                             name="cp"
                             value="unga"
                             checked={formData.cp === "unga"}
                             onChange={handleChange}
                           />
-                          <label htmlFor="1st">
+                          <label htmlFor="unga">
                             UNGA - United Nations General Assembly
                           </label>
                           <br />
 
                           <input
                             type="radio"
-                            id="cp1"
+                            id="unitar"
                             name="cp"
                             value="unitar"
                             checked={formData.cp === "unitar"}
                             onChange={handleChange}
                           />
-                          <label htmlFor="2nd">
+                          <label htmlFor="unitar">
                             UNITAR - United Nations Institute for Training &
                             Research
                           </label>
                           <br />
                           <input
                             type="radio"
-                            id="cp"
+                            id="un"
                             name="cp"
-                            value="3rd"
-                            checked={formData.cp === "3rd"}
+                            value="un"
+                            checked={formData.cp === "un"}
                             onChange={handleChange}
                           />
-                          <label htmlFor="3rd">UN Ocean Conference</label>
+                          <label htmlFor="un">UN Ocean Conference</label>
                           <br />
                           <input
                             type="radio"
-                            id="cp2"
+                            id="ic"
                             name="cp"
-                            value="UN"
-                            checked={formData.cp === "UN"}
+                            value="ic"
+                            checked={formData.cp === "ic"}
                             onChange={handleChange}
                           />
-                          <label htmlFor="UN">
+                          <label htmlFor="ic">
                             Indian Cabinet - Ministry of Finance
                           </label>
                           <br />
@@ -715,49 +715,49 @@ function App() {
                           <legend>2nd committee Preference* </legend>
                           <input
                             type="radio"
-                            id="cp"
-                            name="cp"
-                            value="unga"
-                            checked={formData.cp === "unga"}
+                            id="unga1"
+                            name="mp"
+                            value="unga1"
+                            checked={formData.mp === "unga1"}
                             onChange={handleChange}
                           />
-                          <label htmlFor="1st">
+                          <label htmlFor="unga1">
                             UNGA - United Nations General Assembly
                           </label>
                           <br />
 
                           <input
                             type="radio"
-                            id="cp1"
-                            name="cp"
-                            value="unitar"
-                            checked={formData.cp === "unitar"}
+                            id="unitar1"
+                            name="mp"
+                            value="unitar1"
+                            checked={formData.mp === "unitar1"}
                             onChange={handleChange}
                           />
-                          <label htmlFor="2nd">
+                          <label htmlFor="unitar1">
                             UNITAR - United Nations Institute for Training &
                             Research
                           </label>
                           <br />
                           <input
                             type="radio"
-                            id="cp"
-                            name="cp"
-                            value="3rd"
-                            checked={formData.cp === "3rd"}
+                            id="un1"
+                            name="mp"
+                            value="un1"
+                            checked={formData.mp === "un1"}
                             onChange={handleChange}
                           />
-                          <label htmlFor="3rd">UN Ocean Conference</label>
+                          <label htmlFor="un1">UN Ocean Conference</label>
                           <br />
                           <input
                             type="radio"
-                            id="cp2"
-                            name="cp"
-                            value="UN"
-                            checked={formData.cp === "UN"}
+                            id="ic1"
+                            name="mp"
+                            value="ic1"
+                            checked={formData.mp === "ic1"}
                             onChange={handleChange}
                           />
-                          <label htmlFor="UN">
+                          <label htmlFor="ic1">
                             Indian Cabinet - Ministry of Finance
                           </label>
                           <br />
@@ -767,49 +767,49 @@ function App() {
                           <legend>3rd committee Preference* </legend>
                           <input
                             type="radio"
-                            id="cp"
-                            name="cp"
-                            value="unga"
-                            checked={formData.cp === "unga"}
+                            id="unga2"
+                            name="dp"
+                            value="unga2"
+                            checked={formData.dp === "unga2"}
                             onChange={handleChange}
                           />
-                          <label htmlFor="1st">
+                          <label htmlFor="unga2">
                             UNGA - United Nations General Assembly
                           </label>
                           <br />
 
                           <input
                             type="radio"
-                            id="cp1"
-                            name="cp"
-                            value="unitar"
-                            checked={formData.cp === "unitar"}
+                            id="unitar2"
+                            name="dp"
+                            value="unitar2"
+                            checked={formData.dp === "unitar2"}
                             onChange={handleChange}
                           />
-                          <label htmlFor="2nd">
+                          <label htmlFor="unitar2">
                             UNITAR - United Nations Institute for Training &
                             Research
                           </label>
                           <br />
                           <input
                             type="radio"
-                            id="cp"
-                            name="cp"
-                            value="3rd"
-                            checked={formData.cp === "3rd"}
+                            id="un2"
+                            name="dp"
+                            value="un2"
+                            checked={formData.dp === "un2"}
                             onChange={handleChange}
                           />
-                          <label htmlFor="3rd">UN Ocean Conference</label>
+                          <label htmlFor="un2">UN Ocean Conference</label>
                           <br />
                           <input
                             type="radio"
-                            id="cp2"
-                            name="cp"
-                            value="UN"
-                            checked={formData.cp === "UN"}
+                            id="ic2"
+                            name="dp"
+                            value="ic2"
+                            checked={formData.dp === "ic2"}
                             onChange={handleChange}
                           />
-                          <label htmlFor="UN">
+                          <label htmlFor="ic2">
                             Indian Cabinet - Ministry of Finance
                           </label>
                           <br />
@@ -820,49 +820,49 @@ function App() {
                           <legend>4th committee Preference* </legend>
                           <input
                             type="radio"
-                            id="cp"
-                            name="cp"
-                            value="unga"
-                            checked={formData.cp === "unga"}
+                            id="unga3"
+                            name="ep"
+                            value="unga3"
+                            checked={formData.ep === "unga3"}
                             onChange={handleChange}
                           />
-                          <label htmlFor="1st">
+                          <label htmlFor="unga3">
                             UNGA - United Nations General Assembly
                           </label>
                           <br />
 
                           <input
                             type="radio"
-                            id="cp1"
-                            name="cp"
-                            value="unitar"
-                            checked={formData.cp === "unitar"}
+                            id="unitar3"
+                            name="ep"
+                            value="unitar3"
+                            checked={formData.ep === "unitar3"}
                             onChange={handleChange}
                           />
-                          <label htmlFor="2nd">
+                          <label htmlFor="unitar3">
                             UNITAR - United Nations Institute for Training &
                             Research
                           </label>
                           <br />
                           <input
                             type="radio"
-                            id="cp"
-                            name="cp"
-                            value="3rd"
-                            checked={formData.cp === "3rd"}
+                            id="un3"
+                            name="ep"
+                            value="un3"
+                            checked={formData.ep === "un3"}
                             onChange={handleChange}
                           />
-                          <label htmlFor="3rd">UN Ocean Conference</label>
+                          <label htmlFor="un3">UN Ocean Conference</label>
                           <br />
                           <input
                             type="radio"
-                            id="cp2"
-                            name="cp"
-                            value="UN"
-                            checked={formData.cp === "UN"}
+                            id="ic3"
+                            name="ep"
+                            value="ic3"
+                            checked={formData.ep === "ic3"}
                             onChange={handleChange}
                           />
-                          <label htmlFor="UN">
+                          <label htmlFor="ic3">
                             Indian Cabinet - Ministry of Finance
                           </label>
                           <br />
