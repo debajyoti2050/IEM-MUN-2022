@@ -150,7 +150,7 @@ export default function Committee() {
                 </SwiperSlide>
                   <SwiperSlide>
                   <div className="testimonial-item">
-                    <img src={INCabinet} className="testimonial-img" alt="" />
+                    <img src={IP} className="testimonial-img" alt="" />
                     <h3>INTERNATIONAL PRESS (IP)</h3>
                     <p>
                      "Freedom of the press is the mortar that binds together the bricks of democracy- 
