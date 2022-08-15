@@ -1,0 +1,77 @@
+#coommitteedesc .psimage{
+    display: flex;
+    justify-content: center;
+}
+
+#coommitteedesc .imgsz{
+    height: 250px;
+    width: 250px;
+}
+
+#coommitteedesc .testimonial-item {
+    text-align: center;
+  }
+
+  #coommitteedesc .testimonial-item h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0 5px 0;
+    color: #111;
+  }
+  
+  #coommitteedesc .testimonial-item h4 {
+    font-size: 14px;
+    color: #999;
+    margin: 0 0 15px 0;
+  }
+  
+  #coommitteedesc .testimonial-item .quote-sign-left {
+    margin-top: -15px;
+    padding-right: 10px;
+    display: inline-block;
+    width: 37px;
+  }
+  
+  #coommitteedesc .testimonial-item .quote-sign-right {
+    margin-bottom: -15px;
+    padding-left: 10px;
+    display: inline-block;
+    max-width: 100%;
+    width: 37px;
+  }
+  
+  #coommitteedesc .testimonial-item p {
+    font-style: italic;
+    margin: 0 auto 15px auto;
+  }
+  
+  @media (min-width: 992px) {
+    #coommitteedesc .testimonial-item p {
+      width: 80%;
+    }
+  }
+
+#coommitteedesc .single{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#coommitteedesc .single .person .imgcenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#coommitteedesc .single .person img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: none;
+}
+
+#coommitteedesc .single .person .info{
+    color: #000;
+    text-align: center;
+}
