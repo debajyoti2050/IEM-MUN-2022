@@ -92,9 +92,11 @@ export default function Committee() {
                       to support country level action for shaping a better
                       future.
                     </p>
-                    <a href="/" className="btn-get-started scrollto " data-aos="fade-in-up" data-aos-delay="400">
-                      Explore More
-                    </a>
+                    <Link to='/committeedesc'>
+                      <a href="/committeedesc" className="btn-get-started scrollto " data-aos="fade-in-up" data-aos-delay="400">
+                        Explore More
+                      </a>
+                    </Link>
                   </div>
                 </SwiperSlide>
 
@@ -120,9 +122,11 @@ export default function Committee() {
                       respective governing bodies. <br />
                       Let’s join hands to preserve the oceans which sustain us.
                     </p>
-                    <a href="/" className="btn-get-started scrollto " data-aos="fade-in-up" data-aos-delay="400">
-                      Explore More
-                    </a>
+                    <Link to='/committeedesc'>
+                      <a href="/committeedesc" className="btn-get-started scrollto " data-aos="fade-in-up" data-aos-delay="400">
+                        Explore More
+                      </a>
+                    </Link>
                   </div>
                 </SwiperSlide>
 
@@ -146,9 +150,11 @@ export default function Committee() {
                       Come join us in debates and conversations and strive to
                       lead your team to victory!
                     </p>
-                    <a href="/" className="btn-get-started scrollto " data-aos="fade-in-up" data-aos-delay="400">
-                      Explore More
-                    </a>
+                    <Link to='/committeedesc'>
+                      <a href="/committeedesc" className="btn-get-started scrollto " data-aos="fade-in-up" data-aos-delay="400">
+                        Explore More
+                      </a>
+                    </Link>
                   </div>
                 </SwiperSlide>
                   <SwiperSlide>
@@ -171,9 +177,11 @@ export default function Committee() {
                     Block your calendars on the 14th, 15th and 16th of October, 2022, 
                     for an eventful weekend of discourse and exchange.
                     </p>
-                    <a href="/" className="btn-get-started scrollto " data-aos="fade-in-up" data-aos-delay="400">
-                      Explore More
-                    </a>
+                    <Link to='/committeedesc'>
+                      <a href="/committeedesc" className="btn-get-started scrollto " data-aos="fade-in-up" data-aos-delay="400">
+                        Explore More
+                      </a>
+                    </Link>
                   </div>
                 </SwiperSlide>
               </Swiper>
