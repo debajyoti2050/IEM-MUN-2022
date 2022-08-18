@@ -1,4 +1,4 @@
-
+import React, { Component }  from 'react';
 import rocketImg from './assets/rocket.png';
 import { Signup } from './components/Signup';
 

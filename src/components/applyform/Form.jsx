@@ -1,6 +1,8 @@
 import React ,{useRef}from "react";
 import './form.css'
-import {useFormik} from 'formik';
+import axios from "axios"
+import { useNavigate } from "react-router-dom";
+import {replace, useFormik} from 'formik';
 
 import {
   Col,
@@ -14,6 +16,7 @@ import {
 import NavbarFixed from "../navbar/navbar";
 
 function App() {
+const navigate= useNavigate();
 const nameRef=useRef();
 const EmailRef=useRef();
 const phnoRef=useRef();
@@ -43,6 +46,7 @@ const   MUN =["branch","yearofStudy","phno"];
 onSubmit:(values) =>{
 alert( `hgcksdn yrsiej name: ${values.name} . email: ${values.Email }`);
 }
+
 
 
 }) 
@@ -97,6 +101,12 @@ alert( `hgcksdn yrsiej name: ${values.name} . email: ${values.Email }`);
       setErrors(newErrors);
     } else {
       console.log(e);
+      try{
+        await axios.post("/https://dd82-104-28-242-148.in.ngrok.io/api/register/",e);
+      }
+      catch(error){
+        console.log(error);
+      }
     }
   };
 

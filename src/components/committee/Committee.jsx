@@ -6,8 +6,8 @@ import UNITAR from "../../assets/committee/UNITAR.png";
 import IP  from "../../assets/committee/IP.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper";
-import "swiper/css";
-import "swiper/css/pagination";
+import "swiper/swiper.min.css";
+import "swiper/modules/pagination/pagination.min.css";
 import SwiperCore, { Autoplay } from "swiper";
 
 import React from "react";

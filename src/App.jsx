@@ -1,3 +1,4 @@
+import React, { Component }  from 'react';
 import './App.css';
 import Homepage from './pages/Homepage';
 import Form from './components/applyform/FinalForm'
@@ -7,6 +8,7 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+
 import PaymentSuccess from './pages/payment-success/PaymentSuccess';
 import PaymentFailed from './pages/payment-failed/PaymentFailed';
 
