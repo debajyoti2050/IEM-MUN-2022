@@ -1,6 +1,6 @@
 import './App.css';
 import Homepage from './pages/Homepage';
-import Form from './components/applyform/Form'
+import Form from './components/applyform/Form';
 import "bootstrap/dist/css/bootstrap.min.css";
 import {
   BrowserRouter,
