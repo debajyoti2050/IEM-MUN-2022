@@ -2,6 +2,7 @@ import './App.css';
 import React, { useEffect, useState } from "react";
 import Homepage from './pages/Homepage';
 import Form from './components/applyform/Form'
+import NewForm from './components/formnew/NewForm'
 import "bootstrap/dist/css/bootstrap.min.css";
 import Committeedesc from './components/eachcommittee/Committeedesc';
 import GridLoader from "react-spinners/GridLoader";
@@ -44,7 +45,7 @@ function App() {
     <BrowserRouter>
       <Routes>
       <Route exact path="/" element={<Homepage/>}/>
-      <Route exact path="/form" element={<Form/>}/>
+      <Route exact path="/form" element={<NewForm/>}/>
       <Route exact path="/committeedesc" element={<Committeedesc/>}/>
       </Routes>
       </BrowserRouter>
