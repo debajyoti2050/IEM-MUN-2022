@@ -58,7 +58,7 @@ export const Signup = () => {
             <div>
               <label>
                 <Field type='radio' name='delegation' value='single' />
-                single
+                Single
               </label>
               <label>
                 <Field type='radio' name='delegation' value='double' />

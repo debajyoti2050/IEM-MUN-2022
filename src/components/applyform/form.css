@@ -1,3 +1,8 @@
 .form{
     padding-top: 85px;
 }
+
+.center{
+    display: flex;
+    justify-content: center;
+}
