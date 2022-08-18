@@ -1,6 +1,6 @@
 import React ,{useRef}from "react";
 import './form.css'
-import Ban from "../../assets/FormBanner.jpg";
+import {useFormik} from 'formik';
 
 import {
   Col,
@@ -25,7 +25,27 @@ const fcpRef = useRef();
 const scpRef = useRef();
 const tcpRef =useRef();
 const checkboxref = useRef();
+const   MUN =["branch","yearofStudy","phno"];
+// const formik=useFormik({
 
+// initialValues:{
+//   name: '',
+//   Email:'',
+//   phno:"",
+//   mun: MUN[0],
+//    nameCodel:"" ,
+//      codelno:"", 
+//      PrevMunexp:"" ,
+//      awards:"", 
+//      refid:""
+
+// },
+onSubmit:(values) =>{
+alert( `hgcksdn yrsiej name: ${values.name} . email: ${values.Email }`);
+}
+
+
+}) 
 
 
   const [formData, setFormData] = React.useState({});
@@ -76,7 +96,7 @@ const checkboxref = useRef();
     if (Object.keys(newErrors).length > 0) {
       setErrors(newErrors);
     } else {
-      alert("Thank you for participation!");
+      console.log(e);
     }
   };
 
@@ -94,7 +114,7 @@ const checkboxref = useRef();
   return (
     <>
       <NavbarFixed />
-      
+
       <div className="form">
       <Container>
         <Row className="vh-100 d-flex justify-content-center align-items-center">
@@ -110,7 +130,7 @@ const checkboxref = useRef();
                   <h2 className="fw-bold mb-2 text-center text-uppercase ">Apply For IEM-MUN</h2>
                   
                   <div className="mb-3">
-                    <Form>
+                    <Form onSubmit={formik.handleSubmit} >
                       
                         <fieldset>
                 <legend>Delegation </legend>
