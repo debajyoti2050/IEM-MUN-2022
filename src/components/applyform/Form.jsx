@@ -14,6 +14,7 @@ import {
 } from "react-bootstrap";
 
 import NavbarFixed from "../navbar/navbar";
+import Select from "react-select/dist/declarations/src/Select";
 
 function App() {
 const navigate= useNavigate();
@@ -166,6 +167,9 @@ alert( `hgcksdn yrsiej name: ${values.name} . email: ${values.Email }`);
                     checked={formData.deligation === "Double"}
                     onChange={handleChange}
                 />
+                <Select options={[
+                  
+                ]}>
                 <label htmlFor="Double">Double</label>
                 <br />
                 
