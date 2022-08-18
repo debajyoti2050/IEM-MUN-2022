@@ -36,9 +36,15 @@ export const Signup = () => {
         tcp: '',
       }}
       validationSchema={validate}
-      onSubmit={(values) => {
+      onSubmit={async (values) => {
         console.log(values)
-        // axios.post('https://cb6a-104-28-242-144.in.ngrok.io/api/register/')
+        await axios.post(
+          'https://8d0f-202-142-77-192.in.ngrok.io/api/register/',
+          {
+            data: values,
+          }
+        )
+        console.log('request sent')
       }}
     >
       {({ errors, touched }) => (
