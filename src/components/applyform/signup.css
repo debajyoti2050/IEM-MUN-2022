@@ -1,0 +1,30 @@
+span{
+    color:red;
+}
+.display h1{
+    /* color:linear-gradient(189deg, rgba(240,95,87,1) 0%, rgba(54,9,64,1) 100%); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    /* text-shadow: 5 5 20 #000; */
+    font-size: 37px;
+    font-style: "Montserrat",sans-serif;
+    /* background: #3995c6b3; */
+    border-radius: 10px;
+    background: -webkit-linear-gradient(rgb(16, 199, 138) , rgb(39, 3, 200));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+input[type=text],input[type=number], input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb(135, 135, 135);
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color:rgba(255, 253, 255, 0.588);
+    color: black;
+  }
+  
