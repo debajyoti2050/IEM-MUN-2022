@@ -5,7 +5,7 @@ import Homepage from './pages/Homepage'
 import Forms from './components/applyform/FinalForm'
 import Committees from './components/eachcommittee/Committeedesc'
 import 'bootstrap/dist/css/bootstrap.min.css'
-
+import GridLoader from "react-spinners/GridLoader";
 import {
   BrowserRouter as Router,
   Switch,
@@ -28,6 +28,20 @@ function App() {
   }, []);
 
   return (
+    <div className="APP">
+     {loading ? (
+      <div className="munloader">
+      <GridLoader
+
+      className="loader"
+        color={"#44CE16"}
+        // css={override}
+        loading={loading}
+        size={30}
+      />
+      </div>
+     
+    ):(
 
 
     <Router>
@@ -39,6 +53,8 @@ function App() {
         <Route exact path='/payment-failed'><PaymentFailed/></Route>
       </Switch>
     </Router>
+    )}
+    </div>
     // <BrowserRouter>
     //   <Routes>
     //     <Route exact path='/' element={<Homepage />} />
