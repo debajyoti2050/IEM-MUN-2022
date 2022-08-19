@@ -33,7 +33,7 @@
         s1pos: "Chairperson",
         Speaker2img: "../images/unitar/RupazBhadra.jpg",
         Speaker2name: "Rupaz Bhadra",
-        s1pos: "Vice Chairperson",
+        s2pos: "Vice Chairperson",
     },
     // {
 
