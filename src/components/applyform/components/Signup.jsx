@@ -3,9 +3,8 @@ import { Formik, Form, useField, Field } from "formik";
 import { TextField } from "./TextField";
 import * as Yup from "yup";
 import axios from "axios";
-import { useHistory } from 'react-router-dom';
-import './signup.css'
-
+import { useHistory } from "react-router-dom";
+import "./signup.css";
 
 export const Signup = () => {
   const history = useHistory();
@@ -19,14 +18,15 @@ export const Signup = () => {
     scp: Yup.string().required("Second country preference is required"),
     tcp: Yup.string().required("Third country preference is required"),
     delegation: Yup.mixed().required("Delegation is required"),
-    organization : Yup.string().max(100, "Must be 100 characters or less").required("Required"),
+    organization: Yup.string()
+      .max(100, "Must be 100 characters or less")
+      .required("Required"),
     compref: Yup.mixed().required("Committee Preference is required"),
     // year: Yup.mixed().required("Year is required"),
     // branch: Yup.mixed().required("Branch is required"),
     codelname: Yup.string().max(50, "Must be 15 characters or less"),
-    codelphone:Yup.string().min(10, "Must be 10 characters"),
-    codelemail :Yup.string().email("Email is invalid"),
-  
+    codelphone: Yup.string().min(10, "Must be 10 characters"),
+    codelemail: Yup.string().email("Email is invalid"),
   });
 
   return (
@@ -36,35 +36,31 @@ export const Signup = () => {
         name: "",
         phone: "",
         email: "",
-        compref:"",
-        organization:"",
+        compref: "",
+        organization: "",
         codelname: "",
         codelphone: "",
         codelemail: "",
         fcp: "",
         scp: "",
         tcp: "",
-        auth : "S3RDMUNCEMA22",
+        residence1: "",
+        residence2: "",
+        accomodation: "",
+        no_of_muns: "",
+        accomplishments: "",
+        auth: "S3RDMUNCEMA22",
       }}
       validationSchema={validate}
       onSubmit={async (values) => {
         console.log(values);
-        
+
         try {
-          await axios.post(
-          "http://172.105.58.216/api/register/",
-          {
-            data: values,
-          }
-        );
-        history.push("/payment-success");
-
-        }
-        catch(error){
-          console.log(error)
+          await axios.post("https://6988-202-142-77-51.in.ngrok.io/api/register/",values);
+          history.push("/payment-success");
+        } catch (error) {
+          console.log(error);
           history.push("/payment-failed");
-
-
         }
 
         // await axios.post(
@@ -74,8 +70,6 @@ export const Signup = () => {
         //   }
         // );
         // console.log("request sent");
-       
-        
       }}
     >
       {({ errors, touched }) => (
@@ -84,60 +78,64 @@ export const Signup = () => {
             APPLY FOR IEM-MUN 2022
           </h1>
           <Form>
-            <div><h5>Delegation</h5></div>
+            <div>
+              <h5>Delegation</h5>
+            </div>
             <div>
               <label>
-                <Field type='radio' name='delegation' value='single' />
+                <Field type="radio" name="delegation" value="single" />
                 Single
               </label>
               <label>
-              &nbsp;&nbsp;
+                &nbsp;&nbsp;
                 <Field type="radio" name="delegation" value="double" />
-                 Double
+                Double
               </label>
-              <br/>
+              <br />
               <span>{errors.delegation}</span>
             </div>
-            <br/>
+            <br />
             <TextField label="Name*" name="name" type="text" />
-            <br/>
+            <br />
             <TextField
               label="Enter your Phone no./WhatsApp no. *"
               name="phone"
               type="number"
             />
-            <br/>
+            <br />
             <TextField label="Email*" name="email" type="email" />
-            <br/>
-            <div><h5>Committee Preference</h5></div>
+            <br />
+            <div>
+              <h5>Committee Preference</h5>
+            </div>
             <div>
               <label>
                 <Field type="radio" name="compref" value="UNGA" />
                 UNITED NATIONS GENERAL ASSEMBLY (UNGA)
               </label>
               <label>
-              &nbsp;&nbsp;
+                &nbsp;&nbsp;
                 <Field type="radio" name="compref" value="UNITAR" />
                 UNITED NATIONS INSTITUTE FOR TRAINING AND RESEARCH
               </label>
               <label>
-              &nbsp;&nbsp;
+                &nbsp;&nbsp;
                 <Field type="radio" name="compref" value="IP" />
                 INTERNATIONAL PRESS (IP)
               </label>
               <label>
-              &nbsp;&nbsp;
+                &nbsp;&nbsp;
                 <Field type="radio" name="compref" value="IC" />
                 INDIAN CABINET MINISTRY OF FINANCE
               </label>
               <label>
-              &nbsp;&nbsp;
+                &nbsp;&nbsp;
                 <Field type="radio" name="compref" value="UNOCEAN" />
                 UN OCEAN CONFERENCE
               </label>
             </div>
-              <span>{errors.compref}</span>
-            <br/>
+            <span>{errors.compref}</span>
+            <br />
             {/* <div><h5>Year of Study</h5></div>
             <div>
               <label>
@@ -190,33 +188,86 @@ export const Signup = () => {
               label="Which Organization do you belong to ? (School/College/University/Others)*"
               name="organization"
               type="text"
-            /><br/>
+            />
+            <br />
             <TextField
               label="First Country Preference*"
               name="fcp"
               type="text"
-            /><br/>
+            />
+            <br />
             <TextField
               label="Second Country Preference*"
               name="scp"
               type="text"
-            /><br/>
+            />
+            <br />
             <TextField
               label="Third Country Preference*"
               name="tcp"
               type="text"
-            /><br/>
+            />
+            <br />
             <TextField
               label=" Name of Co-Delegate"
               name="codelname"
               type="text"
-            /><br/>
+            />
+            <br />
             <TextField
               label=" Contact no of Co-Delegate"
               name="codelphone"
               type="number"
-            /><br/>
-            <TextField label=" Co-Delegate Email" name="codelemail" type="email" />
+            />
+            <br />
+            <TextField
+              label=" Co-Delegate Email"
+              name="codelemail"
+              type="email"
+            />
+            <TextField
+              label="Delegate's Address" 
+              name="residence1"
+              type="text"
+            />
+            <br/>
+            <TextField
+              label="Co-Delegate's Address" 
+              name="residence2"
+              type="text"
+            />
+            <br/>
+
+            <div>
+              <h5>Accomodation Required?</h5>
+            </div>
+            <div>
+              <label>
+                <Field type="radio" name="accomodation" value="yes" />
+                Yes
+              </label>
+              <label>
+                &nbsp;&nbsp;
+                <Field type="radio" name="compref" value="no" />
+                No
+              </label>
+             </div>
+            <span>{errors.accomodation}</span>
+            <br/>
+            <TextField
+              label="Number of MUN you Have Participated Before" 
+              name="no_of_muns"
+              type="text"
+            />
+            <br/>
+
+            <TextField
+              label="Previous MUN accomplishments" 
+              name="accomplishments"
+              type="text"
+            />
+            <br/>
+            
 
             {/* <FormExample/> */}
 
