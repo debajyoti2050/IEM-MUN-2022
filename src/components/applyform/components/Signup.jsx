@@ -3,17 +3,17 @@ import { Formik, Form, useField, Field } from "formik";
 import { TextField } from "./TextField";
 import * as Yup from "yup";
 import axios from "axios";
-import { useNavigate } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import './signup.css'
 
 
 export const Signup = () => {
-  let navigate = useNavigate();
+  const history = useHistory();
   const validate = Yup.object({
     name: Yup.string()
-      .max(15, "Must be 15 characters or less")
+      .max(50, "Must be 15 characters or less")
       .required("Required"),
-    phone: Yup.string().max(10, "Must be 10 characters").required("Required"),
+    phone: Yup.string().min(10, "Must be 10 characters").required("Required"),
     email: Yup.string().email("Email is invalid").required("Email is required"),
     fcp: Yup.string().required("First country preference is required"),
     scp: Yup.string().required("Second country preference is required"),
@@ -22,9 +22,9 @@ export const Signup = () => {
     year: Yup.mixed().required("Year is required"),
     branch: Yup.mixed().required("Branch is required"),
     codelname: Yup.string()
-      .max(15, "Must be 15 characters or less")
+      .max(50, "Must be 15 characters or less")
       .required("Required"),
-    codelphone:Yup.string().max(10, "Must be 10 characters").required("Required"),
+    codelphone:Yup.string().min(10, "Must be 10 characters").required("Required"),
     codelemail :Yup.string().email("Email is invalid").required("Email is required"),
   
   });
@@ -48,14 +48,32 @@ export const Signup = () => {
       validationSchema={validate}
       onSubmit={async (values) => {
         console.log(values);
-        await axios.post(
+        
+        try {
+          await axios.post(
           "https://8d0f-202-142-77-192.in.ngrok.io/api/register/",
           {
             data: values,
           }
         );
-        console.log("request sent");
-        navigate('../paymentsuccess',{ replace: true });
+        history.push("/payment-success");
+
+        }
+        catch(error){
+          console.log(error)
+          history.push("/payment-failed");
+
+
+        }
+
+        // await axios.post(
+        //   "https://8d0f-202-142-77-192.in.ngrok.io/api/register/",
+        //   {
+        //     data: values,
+        //   }
+        // );
+        // console.log("request sent");
+       
         
       }}
     >
@@ -163,7 +181,7 @@ export const Signup = () => {
               name="codelphone"
               type="number"
             /><br/>
-            <TextField label=" Co-Delegate" name="codelemail" type="email" />
+            <TextField label=" Co-Delegate Email" name="codelemail" type="email" />
 
             {/* <FormExample/> */}
 
