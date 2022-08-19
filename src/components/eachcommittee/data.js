@@ -1,4 +1,6 @@
-const Committees =[
+
+ const Committees =[
+
     {
         key:1,
         Cimage:"../images/UNGA.png",
@@ -30,7 +32,8 @@ const Committees =[
         Speaker2name: "Lorem Ipsum",
     },
     {
-        key:3,
+
+         key:3,
         Cimage:"../images/IP.png",
         Cname: "INTERNATIONAL PRESS (IP)",
         Quote: "More than ever before in human history, we share a common destiny. We can master it only if we face it together. And that, my friends, is why we have the United Nations.",

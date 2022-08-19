@@ -46,8 +46,6 @@ export default function Hero() {
                   <a
                     href="/form"
                     className="btn-get-started scrollto animate__animated animate__fadeInUp"
-                    data-aos="fade-in-up"
-                    data-aos-delay="400"
                   >
                     Apply Now
                   </a>
