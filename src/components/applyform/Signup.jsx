@@ -1,23 +1,23 @@
-import React from "react";
-import { Formik, Form, useField, Field } from "formik";
-import { TextField } from "./TextField";
-import * as Yup from "yup";
-import axios from "axios";
-import { useHistory } from "react-router-dom";
-import "./signup.css";
+import React from 'react'
+import { Formik, Form, useField, Field } from 'formik'
+import { TextField } from './TextField'
+import * as Yup from 'yup'
+import axios from 'axios'
+import { useHistory } from 'react-router-dom'
+import './signup.css'
 
 export const Signup = () => {
-  const history = useHistory();
+  const history = useHistory()
   const validate = Yup.object({
     name: Yup.string()
-      .max(50, "Must be 15 characters or less")
-      .required("Required"),
-    phone: Yup.string().min(10, "Must be 10 characters").required("Required"),
-    email: Yup.string().email("Email is invalid").required("Email is required"),
-    fcp: Yup.string().required("First country preference is required"),
-    scp: Yup.string().required("Second country preference is required"),
-    tcp: Yup.string().required("Third country preference is required"),
-    delegation: Yup.mixed().required("Delegation is required"),
+      .max(50, 'Must be 15 characters or less')
+      .required('Required'),
+    phone: Yup.string().min(10, 'Must be 10 characters').required('Required'),
+    email: Yup.string().email('Email is invalid').required('Email is required'),
+    fcp: Yup.string().required('First country preference is required'),
+    scp: Yup.string().required('Second country preference is required'),
+    tcp: Yup.string().required('Third country preference is required'),
+    delegation: Yup.mixed().required('Delegation is required'),
     organization: Yup.string()
       .max(100, "Must be 100 characters or less")
       .required("Required"),
@@ -25,10 +25,10 @@ export const Signup = () => {
     compref2: Yup.mixed().required("Committee Preference is required"),
     // year: Yup.mixed().required("Year is required"),
     // branch: Yup.mixed().required("Branch is required"),
-    codelname: Yup.string().max(50, "Must be 15 characters or less"),
-    codelphone: Yup.string().min(10, "Must be 10 characters"),
-    codelemail: Yup.string().email("Email is invalid"),
-  });
+    codelname: Yup.string().max(50, 'Must be 15 characters or less'),
+    codelphone: Yup.string().min(10, 'Must be 10 characters'),
+    codelemail: Yup.string().email('Email is invalid'),
+  })
 
   return (
     <Formik
@@ -55,14 +55,14 @@ export const Signup = () => {
       }}
       validationSchema={validate}
       onSubmit={async (values) => {
-        console.log(values);
+        console.log(values)
 
         try {
-          await axios.post("https://6988-202-142-77-51.in.ngrok.io/api/register/",values);
-          history.push("/payment-success");
+          await axios.post('http://172.105.58.216/api/register/', values)
+          history.push('/payment-success')
         } catch (error) {
-          console.log(error);
-          history.push("/payment-failed");
+          console.log(error)
+          history.push('/payment-failed')
         }
 
         // await axios.post(
@@ -194,21 +194,21 @@ export const Signup = () => {
             <br />            
             <br />
             <TextField
-              label="First Country Preference*"
-              name="fcp"
-              type="text"
+              label='First Country Preference*'
+              name='fcp'
+              type='text'
             />
             <br />
             <TextField
-              label="Second Country Preference*"
-              name="scp"
-              type="text"
+              label='Second Country Preference*'
+              name='scp'
+              type='text'
             />
             <br />
             <TextField
-              label="Third Country Preference*"
-              name="tcp"
-              type="text"
+              label='Third Country Preference*'
+              name='tcp'
+              type='text'
             />
             <br />
             <TextField
@@ -231,14 +231,14 @@ export const Signup = () => {
               type="email"
               placeholder="Enter Co-Delegate Email "
             />
-            <br/>
+            <br />
             <TextField
               label="Co-Delegate's Address" 
               name="residence2"
               type="text"
               placeholder="Enter Co-Delegate's Address "
             />
-            <br/>
+            <br />
 
             <div>
               <h5>Accomodation Required?</h5>
@@ -254,16 +254,16 @@ export const Signup = () => {
                 <Field type="radio" name="accomodation" value="no" />
                 &nbsp;&nbsp;No
               </label>
-             </div>
+            </div>
             <span>{errors.accomodation}</span>
-            <br/>
+            <br />
             <TextField
               label="Number of MUN you have participated before" 
               name="no_of_muns"
               type="text"
               placeholder="Enter number "
             />
-            <br/>
+            <br />
 
             <TextField
               label="Previous MUN accomplishments" 
@@ -271,12 +271,11 @@ export const Signup = () => {
               type="text"
               placeholder="Enter Previous MUN accomplishments "
             />
-            <br/>
-            
+            <br />
 
             {/* <FormExample/> */}
 
-            <button className="btn btn-primary mt-3" type="submit">
+            <button className='btn btn-primary mt-3' type='submit'>
               Submit
             </button>
             <button className="btn btn-danger mt-3 ml-3 mx-2" type="reset">
@@ -286,5 +285,5 @@ export const Signup = () => {
         </div>
       )}
     </Formik>
-  );
-};
+  )
+}
