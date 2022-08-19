@@ -3,12 +3,12 @@ import { Formik, Form, useField, Field } from "formik";
 import { TextField } from "./TextField";
 import * as Yup from "yup";
 import axios from "axios";
-import { useNavigate } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import './signup.css'
 
 
 export const Signup = () => {
-  let navigate = useNavigate();
+  const history = useHistory();
   const validate = Yup.object({
     name: Yup.string()
       .max(15, "Must be 15 characters or less")
@@ -55,7 +55,7 @@ export const Signup = () => {
           }
         );
         console.log("request sent");
-        navigate('../paymentsuccess',{ replace: true });
+        history.push("/paymentsuccess")
         
       }}
     >
@@ -163,7 +163,7 @@ export const Signup = () => {
               name="codelphone"
               type="number"
             /><br/>
-            <TextField label=" Co-Delegate" name="codelemail" type="email" />
+            <TextField label=" Co-Delegate Email" name="codelemail" type="email" />
 
             {/* <FormExample/> */}
 
