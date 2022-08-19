@@ -4,6 +4,7 @@ import { TextField } from "./TextField";
 import * as Yup from "yup";
 import axios from "axios";
 import { useNavigate } from 'react-router-dom';
+import './signup.css'
 
 
 export const Signup = () => {
@@ -64,91 +65,104 @@ export const Signup = () => {
             APPLY FOR IEM-MUN 2022
           </h1>
           <Form>
-            <div>Delegation</div>
-            {errors.delegation}
+            <div><h5>Delegation</h5></div>
             <div>
               <label>
-                <Field type="radio" name="delegation" value="single" />
-                single
+                <Field type='radio' name='delegation' value='single' />
+                Single
               </label>
               <label>
+              &nbsp;&nbsp;
                 <Field type="radio" name="delegation" value="double" />
-                Double
+                 Double
               </label>
+              <br/>
+              <span>{errors.delegation}</span>
             </div>
+            <br/>
             <TextField label="Name*" name="name" type="text" />
+            <br/>
             <TextField
               label="Enter your Phone no*"
               name="phone"
               type="number"
             />
+            <br/>
             <TextField label="Email*" name="email" type="email" />
-            <div>Year of Study</div>
-            {errors.delegation}
+            <br/>
+            <div><h5>Year of Study</h5></div>
             <div>
               <label>
                 <Field type="radio" name="year" value="first" />
                 1st
               </label>
               <label>
+              &nbsp;&nbsp;
                 <Field type="radio" name="year" value="second" />
                 2nd
               </label>
               <label>
+              &nbsp;&nbsp;
                 <Field type="radio" name="year" value="third" />
                 3rd
               </label>
               <label>
+              &nbsp;&nbsp;
                 <Field type="radio" name="year" value="fourth" />
                 4th
               </label>
             </div>
-            <div>Branch</div>
-            {errors.delegation}
+              <span>{errors.year}</span>
+            <br/>
+            <div><h5>Branch</h5></div>
             <div>
               <label>
                 <Field type="radio" name="branch" value="CSE" />
                 CSE
               </label>
               <label>
+              &nbsp;&nbsp;
                 <Field type="radio" name="branch" value="CSE/AIML" />
                 CSE/AIML
               </label>
               <label>
+              &nbsp;&nbsp;
                 <Field type="radio" name="branch" value="CSE/CSBS" />
                 CSE/CSBS
               </label>
               <label>
+              &nbsp;&nbsp;
                 <Field type="radio" name="branch" value="CSE/IOT" />
                 CSE/IOT
               </label>
             </div>
-
+            <span>{errors.branch}</span>
+            <br/>
             <TextField
               label="First country propagation*"
               name="fcp"
               type="text"
-            />
+            /><br/>
             <TextField
               label="Second country propagation*"
               name="scp"
               type="text"
-            />
+            /><br/>
             <TextField
               label="Third country propagation*"
               name="tcp"
               type="text"
-            />
+            /><br/>
             <TextField
               label=" Name of Co-Delegate"
               name="codelname"
               type="text"
-            />
+            /><br/>
             <TextField
               label=" Contact no of Co-Delegate"
               name="codelphone"
               type="number"
-            />
+            /><br/>
             <TextField label=" Co-Delegate" name="codelemail" type="email" />
 
             {/* <FormExample/> */}
