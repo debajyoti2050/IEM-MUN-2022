@@ -15,12 +15,12 @@ export const Signup = () => {
       .required("Required"),
     phone: Yup.string().max(10, "Must be 10 characters").required("Required"),
     email: Yup.string().email("Email is invalid").required("Email is required"),
-    fcp: Yup.string().required(" first country preference is required"),
-    scp: Yup.string().required(" second country preference is required"),
-    tcp: Yup.string().required("third country preference is required"),
-    delegation: Yup.mixed().required("delegation is required"),
-    year: Yup.mixed().required("year is required"),
-    branch: Yup.mixed().required("branch is required"),
+    fcp: Yup.string().required("First country preference is required"),
+    scp: Yup.string().required("Second country preference is required"),
+    tcp: Yup.string().required("Third country preference is required"),
+    delegation: Yup.mixed().required("Delegation is required"),
+    year: Yup.mixed().required("Year is required"),
+    branch: Yup.mixed().required("Branch is required"),
     codelname: Yup.string()
       .max(15, "Must be 15 characters or less")
       .required("Required"),
