@@ -166,10 +166,10 @@ export const Signup = () => {
 
             {/* <FormExample/> */}
 
-            <button className="btn btn-dark mt-3" type="submit">
+            <button className="btn btn-primary mt-3" type="submit">
               Submit
             </button>
-            <button className="btn btn-danger mt-3 ml-3" type="reset">
+            <button className="btn btn-danger mt-3 ml-3 mx-5" type="reset">
               Reset
             </button>
           </Form>
