@@ -32,7 +32,7 @@ export default function Collaborators() {
     <section id="clients">
       <div className="container" data-aos="zoom-in">
         <header className="section-header">
-          <h3>Our Previous Colaboration</h3>
+          <h3>Our Previous Collaboration</h3>
         </header>
 
         <div className="clients-slider swiper colaboration">
