@@ -5,6 +5,7 @@ import Navbar from "react-bootstrap/Navbar";
 import React from "react";
 import Logo from "../../assets/IEM_Logo.png";
 import Logo1 from "../../assets/MUN_Logo.png";
+import Logo2 from "../../assets/new.jpg";
 import "./navbar.css";
 import { Link } from "react-router-dom";
 
@@ -53,6 +54,13 @@ function NavbarFixed(props) {
             <img
               alt=""
               src={Logo}
+              height="60"
+              margin="0px  10px"
+              className="d-inline-block align-top logo"
+            />
+            <img
+              alt=""
+              src={Logo2}
               height="60"
               margin="0px  10px"
               className="d-inline-block align-top logo"
