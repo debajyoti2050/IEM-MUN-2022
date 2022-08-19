@@ -55,7 +55,8 @@ export const Signup = () => {
           }
         );
         console.log("request sent");
-        navigate('../../pages/payment-success/PaymentSuccess');
+        navigate('../paymentsuccess',{ replace: true });
+        
       }}
     >
       {({ errors, touched }) => (
