@@ -24,9 +24,15 @@ export const Signup = () => {
     compref: Yup.mixed().required('Committee Preference is required'),
     // year: Yup.mixed().required("Year is required"),
     // branch: Yup.mixed().required("Branch is required"),
-    codelname: Yup.string().max(50, 'Must be 15 characters or less'),
+    codelname: Yup.string().max(50, 'Must be 50 characters or less'),
     codelphone: Yup.string().min(10, 'Must be 10 characters'),
     codelemail: Yup.string().email('Email is invalid'),
+    residence1 : Yup.string().max(50, 'Must be 50 characters or less').required('Required'),
+    residence2: Yup.string().max(50, 'Must be 50 characters or less'),
+    accomodation : Yup.mixed().required('Please select an Option'),
+    no_of_muns : Yup.string().max(3, 'Must be 3 characters or less').required('Required'),
+    accomplishments :  Yup.string().max(300, 'Must be 300 characters or less'),
+
   })
 
   return (
@@ -257,7 +263,7 @@ export const Signup = () => {
             <TextField
               label='Number of MUN you Have Participated Before'
               name='no_of_muns'
-              type='text'
+              type='number'
             />
             <br />
 
