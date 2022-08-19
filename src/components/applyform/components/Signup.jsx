@@ -19,11 +19,11 @@ export const Signup = () => {
     scp: Yup.string().required("Second country preference is required"),
     tcp: Yup.string().required("Third country preference is required"),
     delegation: Yup.mixed().required("Delegation is required"),
-    year: Yup.mixed().required("Year is required"),
-    branch: Yup.mixed().required("Branch is required"),
-    codelname: Yup.string()
-      .max(50, "Must be 15 characters or less")
-      ,
+    organization : Yup.string().max(100, "Must be 100 characters or less").required("Required"),
+    compref: Yup.mixed().required("Committee Preference is required"),
+    // year: Yup.mixed().required("Year is required"),
+    // branch: Yup.mixed().required("Branch is required"),
+    codelname: Yup.string().max(50, "Must be 15 characters or less"),
     codelphone:Yup.string().min(10, "Must be 10 characters"),
     codelemail :Yup.string().email("Email is invalid"),
   
@@ -37,6 +37,7 @@ export const Signup = () => {
         phone: "",
         email: "",
         year: "",
+        compref:"",
         branch: "",
         codelname: "",
         codelphone: "",
@@ -101,14 +102,43 @@ export const Signup = () => {
             <TextField label="Name*" name="name" type="text" />
             <br/>
             <TextField
-              label="Enter your Phone no*"
+              label="Enter your Phone no./WhatsApp no. *"
               name="phone"
               type="number"
             />
             <br/>
             <TextField label="Email*" name="email" type="email" />
             <br/>
-            <div><h5>Year of Study</h5></div>
+            <div><h5>Committee Preference</h5></div>
+            <div>
+              <label>
+                <Field type="radio" name="compref" value="UNGA" />
+                UNITED NATIONS GENERAL ASSEMBLY (UNGA)
+              </label>
+              <label>
+              &nbsp;&nbsp;
+                <Field type="radio" name="compref" value="UNITAR" />
+                UNITED NATIONS INSTITUTE FOR TRAINING AND RESEARCH
+              </label>
+              <label>
+              &nbsp;&nbsp;
+                <Field type="radio" name="compref" value="IP" />
+                INTERNATIONAL PRESS (IP)
+              </label>
+              <label>
+              &nbsp;&nbsp;
+                <Field type="radio" name="compref" value="IC" />
+                INDIAN CABINET MINISTRY OF FINANCE
+              </label>
+              <label>
+              &nbsp;&nbsp;
+                <Field type="radio" name="compref" value="UNOCEAN" />
+                UN OCEAN CONFERENCE
+              </label>
+            </div>
+              <span>{errors.compref}</span>
+            <br/>
+            {/* <div><h5>Year of Study</h5></div>
             <div>
               <label>
                 <Field type="radio" name="year" value="first" />
@@ -155,19 +185,24 @@ export const Signup = () => {
               </label>
             </div>
             <span>{errors.branch}</span>
-            <br/>
+            <br/> */}
             <TextField
-              label="First country propagation*"
+              label="Which Organization do you belong to ? (School/College/University/Others)*"
+              name="organization"
+              type="text"
+            /><br/>
+            <TextField
+              label="First Country Preference*"
               name="fcp"
               type="text"
             /><br/>
             <TextField
-              label="Second country propagation*"
+              label="Second Country Preference*"
               name="scp"
               type="text"
             /><br/>
             <TextField
-              label="Third country propagation*"
+              label="Third Country Preference*"
               name="tcp"
               type="text"
             /><br/>
