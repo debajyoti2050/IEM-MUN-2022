@@ -2,10 +2,14 @@ import React, { Component }  from 'react';
 import rocketImg from './assets/rocket.png';
 import { Signup } from './components/Signup';
 import './form.css'
+import NavbarFixed from '../navbar/navbar';
+import Footer from '../footer/Footer';
 
 function App() {
   return (
-    <div className="container mt-3">
+    <>
+    <NavbarFixed/>
+    <div className="container mt-5 mb-5">
       <div className="row center">
         <div className="col-md-7 col-lg-7 center">
           <Signup />
@@ -15,6 +19,9 @@ function App() {
         </div> */}
       </div>
     </div>
+    <Footer/>
+    </>
+    
   );
 }
 

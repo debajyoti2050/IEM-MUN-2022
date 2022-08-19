@@ -60,7 +60,7 @@ export const Signup = () => {
       }}
     >
       {({ errors, touched }) => (
-        <div>
+        <div className="mt-4">
           <h1 className="my-4 font-weight-bold .display-4">
             APPLY FOR IEM-MUN 2022
           </h1>
@@ -167,10 +167,10 @@ export const Signup = () => {
 
             {/* <FormExample/> */}
 
-            <button className="btn btn-dark mt-3" type="submit">
+            <button className="btn btn-primary mt-3" type="submit">
               Submit
             </button>
-            <button className="btn btn-danger mt-3 ml-3" type="reset">
+            <button className="btn btn-danger mt-3 ml-3 mx-5" type="reset">
               Reset
             </button>
           </Form>
