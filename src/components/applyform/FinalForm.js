@@ -1,6 +1,5 @@
 import React, { Component }  from 'react';
-import rocketImg from './assets/rocket.png';
-import { Signup } from './components/Signup';
+import { Signup } from './Signup';
 import './form.css'
 import NavbarFixed from '../navbar/navbar';
 import Footer from '../footer/Footer';
