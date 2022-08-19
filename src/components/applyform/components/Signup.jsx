@@ -36,23 +36,23 @@ export const Signup = () => {
         name: "",
         phone: "",
         email: "",
-        year: "",
         compref:"",
-        branch: "",
+        organization:"",
         codelname: "",
         codelphone: "",
         codelemail: "",
         fcp: "",
         scp: "",
         tcp: "",
+        auth : "S3RDMUNCEMA22",
       }}
       validationSchema={validate}
       onSubmit={async (values) => {
-        // console.log(values);
+        console.log(values);
         
         try {
           await axios.post(
-          "https://8d0f-202-142-77-192.in.ngrok.io/api/register/",
+          "http://172.105.58.216/api/register/",
           {
             data: values,
           }

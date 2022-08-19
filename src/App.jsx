@@ -47,7 +47,7 @@ function App() {
     <Router>
       <Switch>
         <Route exact path='/'><Homepage/></Route>
-        {/* <Route path='/form'><Forms/></Route> */}
+        <Route path='/form'><Forms/></Route>
         <Route path='/committeedesc'><Committees/></Route>
         <Route exact path='/payment-success'><PaymentSuccess/></Route>
         <Route exact path='/payment-failed'><PaymentFailed/></Route>
