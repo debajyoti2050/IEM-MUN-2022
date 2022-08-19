@@ -11,9 +11,9 @@ export const Signup = () => {
   const history = useHistory();
   const validate = Yup.object({
     name: Yup.string()
-      .max(15, "Must be 15 characters or less")
+      .max(50, "Must be 15 characters or less")
       .required("Required"),
-    phone: Yup.string().max(10, "Must be 10 characters").required("Required"),
+    phone: Yup.string().min(10, "Must be 10 characters").required("Required"),
     email: Yup.string().email("Email is invalid").required("Email is required"),
     fcp: Yup.string().required(" first country preference is required"),
     scp: Yup.string().required(" second country preference is required"),
@@ -22,9 +22,9 @@ export const Signup = () => {
     year: Yup.mixed().required("year is required"),
     branch: Yup.mixed().required("branch is required"),
     codelname: Yup.string()
-      .max(15, "Must be 15 characters or less")
+      .max(50, "Must be 15 characters or less")
       .required("Required"),
-    codelphone:Yup.string().max(10, "Must be 10 characters").required("Required"),
+    codelphone:Yup.string().min(10, "Must be 10 characters").required("Required"),
     codelemail :Yup.string().email("Email is invalid").required("Email is required"),
   
   });
@@ -48,14 +48,32 @@ export const Signup = () => {
       validationSchema={validate}
       onSubmit={async (values) => {
         console.log(values);
-        await axios.post(
+        
+        try {
+          await axios.post(
           "https://8d0f-202-142-77-192.in.ngrok.io/api/register/",
           {
             data: values,
           }
         );
-        console.log("request sent");
-        history.push("/paymentsuccess")
+        history.push("/payment-success");
+
+        }
+        catch(error){
+          console.log(error)
+          history.push("/payment-failed");
+
+
+        }
+
+        // await axios.post(
+        //   "https://8d0f-202-142-77-192.in.ngrok.io/api/register/",
+        //   {
+        //     data: values,
+        //   }
+        // );
+        // console.log("request sent");
+       
         
       }}
     >
