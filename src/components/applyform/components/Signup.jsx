@@ -23,9 +23,9 @@ export const Signup = () => {
     branch: Yup.mixed().required("Branch is required"),
     codelname: Yup.string()
       .max(50, "Must be 15 characters or less")
-      .required("Required"),
-    codelphone:Yup.string().min(10, "Must be 10 characters").required("Required"),
-    codelemail :Yup.string().email("Email is invalid").required("Email is required"),
+      ,
+    codelphone:Yup.string().min(10, "Must be 10 characters"),
+    codelemail :Yup.string().email("Email is invalid"),
   
   });
 
