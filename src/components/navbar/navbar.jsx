@@ -5,7 +5,7 @@ import Navbar from "react-bootstrap/Navbar";
 import React from "react";
 import Logo from "../../assets/IEM_Logo.png";
 import Logo1 from "../../assets/MUN_Logo.png";
-import Logo2 from "../../assets/new.jpg";
+import Logo2 from "../../assets/new1.jpg";
 import "./navbar.css";
 import { Link } from "react-router-dom";
 
