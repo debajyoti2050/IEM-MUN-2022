@@ -47,7 +47,7 @@ export const Signup = () => {
       }}
       validationSchema={validate}
       onSubmit={async (values) => {
-        console.log(values);
+        // console.log(values);
         
         try {
           await axios.post(

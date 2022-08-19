@@ -1,8 +1,9 @@
 
-import React, { Component } from 'react'
+import React, { Component ,useState , useEffect } from 'react'
 import './App.css'
 import Homepage from './pages/Homepage'
 import Forms from './components/applyform/FinalForm'
+import Committees from './components/eachcommittee/Committeedesc'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 import {
@@ -33,6 +34,7 @@ function App() {
       <Switch>
         <Route exact path='/'><Homepage/></Route>
         <Route path='/form'><Forms/></Route>
+        <Route path='/committeedesc'><Committees/></Route>
         <Route exact path='/payment-success'><PaymentSuccess/></Route>
         <Route exact path='/payment-failed'><PaymentFailed/></Route>
       </Switch>
