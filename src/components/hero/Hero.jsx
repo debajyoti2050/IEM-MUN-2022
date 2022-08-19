@@ -45,7 +45,7 @@ export default function Hero() {
                   {/* <Link to='/form'> */}
                   {/* <button onClick={()=>{ alert('Registration Starts Soon!'); }}> */}
                   <a
-                  onClick={()=>{ alert('Registration Starts Tomorrow at 2PM'); }}
+                  onClick={()=>{ alert('Registration Starts on 20th August at 2PM'); }}
                     
                     className="btn-get-started scrollto animate__animated animate__fadeInUp"
                   >
