@@ -9,9 +9,10 @@ function App() {
   return (
     <>
     <NavbarFixed/>
-    <div className="container mt-5 mb-5">
+    <section id="regform" className='regform'>
+    <div className="container mt-4 mb-0">
       <div className="row center">
-        <div className="col-md-7 col-lg-7 center">
+        <div className="col-md-7 col-lg-7 center drop drop1">
           <Signup />
         </div>
         {/* <div className="col-md-7 my-auto">
@@ -19,6 +20,8 @@ function App() {
         </div> */}
       </div>
     </div>
+    </section>
+    
     <Footer/>
     </>
     

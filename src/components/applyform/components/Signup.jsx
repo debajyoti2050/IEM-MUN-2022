@@ -78,8 +78,8 @@ export const Signup = () => {
       }}
     >
       {({ errors, touched }) => (
-        <div className="mt-4">
-          <h1 className="my-4 font-weight-bold .display-4">
+        <div className="mt-4 mb-4">
+          <h1 className="my-4 font-weight-bold display">
             APPLY FOR IEM-MUN 2022
           </h1>
           <Form>
