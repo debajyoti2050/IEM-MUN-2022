@@ -248,7 +248,7 @@ export const Signup = () => {
               </label>
               <label>
                 &nbsp;&nbsp;
-                <Field type="radio" name="compref" value="no" />
+                <Field type="radio" name="accomodation" value="no" />
                 No
               </label>
              </div>
