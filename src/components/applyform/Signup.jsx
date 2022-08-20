@@ -35,6 +35,10 @@ export const Signup = () => {
     organization: Yup.string()
       .max(100, 'Must be 100 characters or less')
       .required('Required'),
+    organization2: Yup.string()
+      .max(100, 'Must be 100 characters or less')
+      .required('Required'),
+      
     compref: Yup.mixed().required('Committee Preference is required'),
     compref2: Yup.mixed().required('Committee Preference is required'),
     // year: Yup.mixed().required("Year is required"),
@@ -79,6 +83,7 @@ export const Signup = () => {
         compref: '',
         compref2: '',
         organization: '',
+        organization2:'',
         codelname: '',
         codelphone: '',
         codelemail: '',
@@ -236,6 +241,7 @@ export const Signup = () => {
               <br />
               <span>{errors.compref}</span>
             </div>
+            <br/>
             <TextField
               label='First Country Preference*'
               name='fcp'
@@ -317,6 +323,7 @@ export const Signup = () => {
               <br />
               <span>{errors.compref2}</span>
             </div>
+            <br/>
             <TextField
               label='First Country Preference*'
               name='fcp2'
@@ -356,6 +363,12 @@ export const Signup = () => {
               name='codelemail'
               type='email'
               placeholder='Enter Co-Delegate Email '
+            />
+            <br/>
+             <TextField
+              label=' Organization of Co-Delegate (School/College/University/Others)*'
+              name='organization2'
+              type='text'
             />
             
             <br />
