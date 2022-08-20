@@ -44,7 +44,7 @@ function App() {
             <Route path='/committeedesc'>
               <Committees />
             </Route>
-            <Route exact path='/registraion-success'>
+            <Route exact path='/registration-success'>
               <PaymentSuccess />
             </Route>
             <Route exact path='/registration-failed'>
