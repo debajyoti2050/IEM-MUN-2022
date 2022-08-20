@@ -101,7 +101,7 @@ export const Signup = () => {
       }}
       validationSchema={validate}
       onSubmit={async (values) => {
-        console.log(values)
+        // console.log(values)
         setLoading(true)
 
         try {
