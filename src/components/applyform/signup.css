@@ -27,4 +27,7 @@ input[type=text],input[type=number], input[type=email] {
     background-color:rgba(255, 253, 255, 0.588);
     color: black;
   }
-  
+  .copref a{
+    color:rgb(244, 12, 70);
+    text-decoration: none;
+  }

@@ -151,14 +151,14 @@ export const Signup = () => {
             <div>
               <h5>Committee Preference 1</h5>
             </div>
-            <div>
+            <div className='copref'>
               <label>
                 &nbsp;&nbsp;
                 <Field type='radio' name='compref' value='UNGA' />
                 &nbsp;&nbsp;UNITED NATIONS GENERAL ASSEMBLY (UNGA) &nbsp;&nbsp;
                 <a
                   href='https://docs.google.com/document/d/1SynS2xEek35PwOYtG9byLz6CmOVxhQ61AcY1SGYmvdk/edit?usp=sharing'
-                  target='_blank'
+                  target='_blank' className='countries'
                 >
                   View Countries
                 </a>
@@ -232,7 +232,7 @@ export const Signup = () => {
             <div>
               <h5>Committee Preference 2</h5>
             </div>
-            <div>
+            <div className='copref'>
               <label>
                 &nbsp;&nbsp;
                 <Field type='radio' name='compref2' value='UNGA' />
