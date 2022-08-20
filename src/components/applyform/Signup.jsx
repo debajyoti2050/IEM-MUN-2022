@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import { Formik, Form, useField, Field } from 'formik'
 import { TextField } from './TextField'
 import * as Yup from 'yup'
@@ -7,6 +7,9 @@ import { useHistory } from 'react-router-dom'
 import './signup.css'
 
 export const Signup = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   const history = useHistory()
   const validate = Yup.object({
     name: Yup.string()
