@@ -330,6 +330,11 @@ export const Signup = () => {
               type='email'
               placeholder='Enter Co-Delegate Email '
             />
+                <TextField
+              label=' Organization of Co-Delegate (School/College/University/Others)*'
+              name='organization'
+              type='text'
+            />
             <br />
             <TextField
               label="Co-Delegate's Address"
