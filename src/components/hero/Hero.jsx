@@ -44,6 +44,10 @@ export default function Hero() {
                   </h2>
                   <Link to='/form'>
                   <a
+<<<<<<< HEAD
+=======
+                  onClick={()=>{ alert('Registration Starts on 20th August at 2PM'); }}
+>>>>>>> main
                     
                     className="btn-get-started scrollto animate__animated animate__fadeInUp"
                   >
