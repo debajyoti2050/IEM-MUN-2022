@@ -49,7 +49,7 @@ export default function Hero() {
                       // }}
                       className='btn-get-started scrollto animate__animated animate__fadeInUp'
                     >
-                      Apply Now
+                      Register Now
                     </a>
                   </Link>
                 </div>
