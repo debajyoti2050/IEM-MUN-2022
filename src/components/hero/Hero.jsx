@@ -42,17 +42,18 @@ export default function Hero() {
                   <h2 data-aos="fade-up" data-aos-delay="400">
                     MODEL UNITED NATIONS
                   </h2>
-                  {/* <Link to='/form'> */}
-                  {/* <button onClick={()=>{ alert('Registration Starts Soon!'); }}> */}
+                  <Link to='/form'>
                   <a
+<<<<<<< HEAD
+=======
                   onClick={()=>{ alert('Registration Starts on 20th August at 2PM'); }}
+>>>>>>> main
                     
                     className="btn-get-started scrollto animate__animated animate__fadeInUp"
                   >
                     Apply Now
                   </a>
-                  {/* </button> */}
-                  {/* </Link> */}
+                  </Link>
                 </div>
               </div>
             </div>
