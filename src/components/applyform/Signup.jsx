@@ -36,8 +36,7 @@ export const Signup = () => {
       .max(100, 'Must be 100 characters or less')
       .required('Required'),
     organization2: Yup.string()
-      .max(100, 'Must be 100 characters or less')
-      .required('Required'),
+      .max(100, 'Must be 100 characters or less'),
       
     compref: Yup.mixed().required('Committee Preference is required'),
     compref2: Yup.mixed().required('Committee Preference is required'),
