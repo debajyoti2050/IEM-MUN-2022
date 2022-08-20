@@ -76,7 +76,7 @@ export const Signup = () => {
         console.log(values)
 
         try {
-          await axios.post('http://172.105.58.216/api/register/', values)
+          await axios.post('https://cema-mun.herokuapp.com/api/register/', values)
           history.push('/registration-success')
         } catch (error) {
           console.log(error)
