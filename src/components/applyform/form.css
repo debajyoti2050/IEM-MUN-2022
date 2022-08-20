@@ -36,3 +36,8 @@
     backdrop-filter: blur(5px);
    -webkit-backdrop-filter: blur(5px);
  }
+ @media(max-width:768px){
+    .form{
+        padding-top: 150px;
+    }
+ }
