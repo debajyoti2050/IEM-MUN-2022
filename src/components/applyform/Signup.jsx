@@ -127,6 +127,11 @@ export const Signup = () => {
         <div className='mt-3 mb-4 display'>
           <h1>APPLY FOR IEM-MUN 2022</h1>
           <hr />
+          <h5>Registration fee (Early Bird):</h5>
+              <p>Single: ₹ 900</p>
+              <p>Double: ₹ 1600</p>
+              <p>Payment will be done after provisional allotment</p>
+              <hr />
           <Form>
             <div>
               <h5>Delegation *</h5>
