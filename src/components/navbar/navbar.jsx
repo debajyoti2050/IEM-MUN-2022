@@ -17,7 +17,7 @@ function NavbarFixed(props) {
           <Nav.Link href="#hero">Home</Nav.Link>
           <Nav.Link href="#about">About Us</Nav.Link>
           <Nav.Link href="#committees">Committee</Nav.Link>
-          <Nav.Link href="/team">Team</Nav.Link>
+          <Nav.Link href="/team">Secretariats</Nav.Link>
           <Nav.Link href="#contact">Contact</Nav.Link>
         </Nav>
       </>
