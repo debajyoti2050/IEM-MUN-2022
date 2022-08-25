@@ -3,6 +3,7 @@ import './App.css'
 import Homepage from './pages/Homepage'
 import Forms from './components/applyform/FinalForm'
 import Committees from './components/eachcommittee/Committeedesc'
+import Team from "./components/team/Team" 
 import 'bootstrap/dist/css/bootstrap.min.css'
 import GridLoader from 'react-spinners/GridLoader'
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
@@ -43,6 +44,9 @@ function App() {
             </Route>
             <Route path='/committeedesc'>
               <Committees />
+            </Route>
+            <Route path='/team'>
+              <Team />
             </Route>
             <Route exact path='/registration-success'>
               <PaymentSuccess />
