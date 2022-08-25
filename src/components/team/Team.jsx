@@ -12,7 +12,7 @@ const Team = () => {
     <section id="team" className="team pt-5">
       <div className="container pt-5 pb-5 mb-5">
       <header className="section-header">
-          <h3>Our Team</h3>
+          <h3>Our Secretariats</h3>
         </header>
         <div className="row center">
           {Teamm.map((e) => {
