@@ -17,7 +17,7 @@ const Team = () => {
         <div className="row center">
           {Teamm.map((e) => {
             return (
-              <TeamM id={e.id} image={e.image} name={e.Name}/>
+              <TeamM id={e.id} image={e.image} name={e.Name} team={e.team}/>
             );
           })}
         </div>
