@@ -1,7 +1,7 @@
 const Members=[
     {
         id:1,
-        image:"../images/team/Avinash.jpg",
+        // image:"../images/team/Avinash.jpg",
         Name:"",
         team:""
     },
