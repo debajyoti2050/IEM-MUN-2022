@@ -9,7 +9,7 @@ const TeamM = (props) => {
         <div className="imgcenter"><img src={props.image || Noavatar} className="profile-a"/></div>
             <div className="info">
                 <h3>{props.name}</h3>
-                <h5>-{props.team}</h5>
+                <h5>- {props.team}</h5>
             </div>
         </div>
     </div>
