@@ -1,7 +1,7 @@
 const Members=[
     {
         id:1,
-        // image:"../images/team/ahana.jpg",
+        image:"../images/team/ahana.jpg",
         Name:"Ahana Mukherjee",
         team:"PR Team"
     },
@@ -32,7 +32,7 @@ const Members=[
     },
     {
          id:6,
-        // image:"../images/team/soumyanath.jpg",
+        image:"../images/team/soumyo.jpg",
         Name: "Soumyanath Tripathy",
         team: "Socials"
     },
@@ -74,7 +74,7 @@ const Members=[
     },
     {
          id:13,
-        // image:"../images/team/Aman.jpg",
+        image:"../images/team/aman.JPG",
         Name: "Aman Kumar",
         team: "Logistics"
     },
@@ -92,7 +92,7 @@ const Members=[
     },
     {
          id:16,
-        // image:"../images/team/arnak.jpg",
+        image:"../images/team/arnak.jpg",
         Name: "Arnak Dandapat",
         team: "Sponsorship"
     },
@@ -116,27 +116,27 @@ const Members=[
     },
     {
          id:20,
-        // image:"../images/team/suchita.jpg",
+        image:"../images/team/Suchita.jpg",
         Name: "Suchita Malik",
         team: "Hospitality"
     },
     
      {
          id:21,
-        // image:"../images/team/souradeep.jpg",
+        image:"../images/team/Souradeep Atar.jpg",
         Name: "Souradeep Atar",
         team: "Hospitality"
     },
     
      {
          id:22,
-        // image:"../images/team/arkaprava.jpg",
+        image:"../images/team/Arkaprava.jpg",
         Name: "Arkaprava Paul",
         team: "Media Coverage"
     },
      {
          id:23,
-        // image:"../images/team/sneha.jpg",
+        image:"../images/team/sneha.jpg",
         Name: "Sneha Biswas",
         team: "Ashram Co-ordinator"
     },
