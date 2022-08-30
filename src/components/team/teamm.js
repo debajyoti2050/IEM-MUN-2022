@@ -7,7 +7,7 @@ const Members=[
     },
     {
         id:2,
-        // image:"../images/team/soubham.jpg",
+        image:"../images/team/soubham.jpg",
         Name: "Soubham Singha",
         team: "PR Team"
     },
@@ -56,13 +56,13 @@ const Members=[
     },
     {
          id:10,
-        // image:"../images/team/anaranya.jpg",
+        image:"../images/team/anaranya.webp",
         Name: "Anaranya Bose",
         team: "Outreach"
     },
     {
          id:11,
-        // image:"../images/team/debarghya.jpg",
+        image:"../images/team/debarghya.jpg",
         Name: "Debarghya Roy",
         team: "Outreach"
     },
@@ -80,8 +80,8 @@ const Members=[
     },
     {
          id:14,
-        // image:"../images/team/ritaja.jpg",
-        Name: "Ritaja Maitra",
+         image:"../images/team/sneha.jpg",
+         Name: "Sneha Biswas",
         team: "Collab"
     },
     {
@@ -98,13 +98,13 @@ const Members=[
     },
    {
          id:17,
-        // image:"../images/team/pranay.jpg",
+        image:"../images/team/pranay.jpg",
         Name: "Pranay Saha",
         team: "sponsorship"
     }, 
     {
          id:18,
-        // image:"../images/team/debayudh.jpg",
+        image:"../images/team/debayudh.jpeg",
         Name: "Debayudh Mitra",
         team: "Delegate Affairs"
     },
