@@ -100,7 +100,7 @@ const Members=[
          id:17,
         image:"../images/team/pranay.jpg",
         Name: "Pranay Saha",
-        team: "sponsorship"
+        team: "Sponsorship"
     }, 
     {
          id:18,
