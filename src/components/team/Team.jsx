@@ -1,6 +1,7 @@
 import React from "react";
 import TeamM from "./TeamM.jsx";
 import Teamm from "./teamm"
+import Heads from "./heads"
 import Navbar from "../navbar/navbar"
 import Footer from "../footer/Footer"
 import "./team.css"
@@ -15,9 +16,16 @@ const Team = () => {
           <h3>Our Secretariats</h3>
         </header>
         <div className="row center">
+          {Heads.map((e) => {
+            return (
+              <TeamM id={e.id} image={e.image} name={e.Name} team={e.team}/>
+            );
+          })}
+        </div>
+        <div className="row center">
           {Teamm.map((e) => {
             return (
-              <TeamM id={e.id} image={e.image} name={e.Name}/>
+              <TeamM id={e.id} image={e.image} name={e.Name} team={e.team}/>
             );
           })}
         </div>
