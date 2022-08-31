@@ -1,13 +1,13 @@
 const Members=[
     {
         id:1,
-        // image:"../images/team/ahana.jpg",
+        image:"../images/team/ahana.jpg",
         Name:"Ahana Mukherjee",
         team:"PR Team"
     },
     {
         id:2,
-        // image:"../images/team/soubham.jpg",
+        image:"../images/team/soubham.jpg",
         Name: "Soubham Singha",
         team: "PR Team"
     },
@@ -32,7 +32,7 @@ const Members=[
     },
     {
          id:6,
-        // image:"../images/team/soumyanath.jpg",
+        image:"../images/team/soumyo.jpg",
         Name: "Soumyanath Tripathy",
         team: "Socials"
     },
@@ -56,13 +56,13 @@ const Members=[
     },
     {
          id:10,
-        // image:"../images/team/anaranya.jpg",
+        image:"../images/team/anaranya.webp",
         Name: "Anaranya Bose",
         team: "Outreach"
     },
     {
          id:11,
-        // image:"../images/team/debarghya.jpg",
+        image:"../images/team/debarghya.jpg",
         Name: "Debarghya Roy",
         team: "Outreach"
     },
@@ -74,14 +74,14 @@ const Members=[
     },
     {
          id:13,
-        // image:"../images/team/Aman.jpg",
+        image:"../images/team/aman.JPG",
         Name: "Aman Kumar",
         team: "Logistics"
     },
     {
          id:14,
-        // image:"../images/team/ritaja.jpg",
-        Name: "Ritaja Maitra",
+         image:"../images/team/sneha.jpg",
+         Name: "Sneha Biswas",
         team: "Collab"
     },
     {
@@ -92,19 +92,19 @@ const Members=[
     },
     {
          id:16,
-        // image:"../images/team/arnak.jpg",
+        image:"../images/team/arnak.jpg",
         Name: "Arnak Dandapat",
         team: "Sponsorship"
     },
    {
          id:17,
-        // image:"../images/team/pranay.jpg",
+        image:"../images/team/pranay.jpg",
         Name: "Pranay Saha",
-        team: "sponsorship"
+        team: "Sponsorship"
     }, 
     {
          id:18,
-        // image:"../images/team/debayudh.jpg",
+        image:"../images/team/debayudh.jpeg",
         Name: "Debayudh Mitra",
         team: "Delegate Affairs"
     },
@@ -116,27 +116,27 @@ const Members=[
     },
     {
          id:20,
-        // image:"../images/team/suchita.jpg",
+        image:"../images/team/Suchita.jpg",
         Name: "Suchita Malik",
         team: "Hospitality"
     },
     
      {
          id:21,
-        // image:"../images/team/souradeep.jpg",
+        image:"../images/team/Souradeep Atar.jpg",
         Name: "Souradeep Atar",
         team: "Hospitality"
     },
     
      {
          id:22,
-        // image:"../images/team/arkaprava.jpg",
+        image:"../images/team/Arkaprava.jpg",
         Name: "Arkaprava Paul",
         team: "Media Coverage"
     },
      {
          id:23,
-        // image:"../images/team/sneha.jpg",
+        image:"../images/team/sneha.jpg",
         Name: "Sneha Biswas",
         team: "Ashram Co-ordinator"
     },
