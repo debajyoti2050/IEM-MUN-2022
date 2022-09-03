@@ -2,8 +2,9 @@ import React, { Component, useState, useEffect } from 'react'
 import './App.css'
 import Homepage from './pages/Homepage'
 import Forms from './components/applyform/FinalForm'
+import Referral from './components/applyform/ReferForm'
 import Committees from './components/eachcommittee/Committeedesc'
-import Team from "./components/team/Team" 
+import Team from './components/team/Team'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import GridLoader from 'react-spinners/GridLoader'
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
@@ -42,14 +43,17 @@ function App() {
             <Route path='/form'>
               <Forms />
             </Route>
+            <Route path='/referral'>
+              <Referral />
+            </Route>
             <Route path='/committeedesc'>
               <Committees />
             </Route>
-            <Route path='/team'>
-              <Team />
-            </Route>
             <Route exact path='/registration-success'>
               <PaymentSuccess />
+            </Route>
+            <Route path='/team'>
+              <Team />
             </Route>
             <Route exact path='/registration-failed'>
               <PaymentFailed />
