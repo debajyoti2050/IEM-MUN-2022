@@ -51,7 +51,7 @@ export default function Hero() {
                         await axios
                           .get("https://cema-mun.herokuapp.com/api/healthcheck")
                           .then((res) => {
-                            if (!res.status === 200) {
+                            if (res.status === 200) {
                               history.push("/form");
                             } else {
                               history.push("/alternateform");
