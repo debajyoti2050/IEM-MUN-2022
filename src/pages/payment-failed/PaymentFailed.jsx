@@ -20,8 +20,12 @@ export default function PaymentSuccess() {
             <div className='failedcontent'>
               <h1>Registration Failed !</h1>
               <p>Your registration failed because of an unwanted Error! </p>
-              <Link to='/'>
-                <a href='/'>Go to Home</a>
+              <p>Try again later or register through this from</p>
+              
+                <a href='https://forms.gle/5sUkr11zH6hS4ptUA' style={{ background :"blue" , marginRight:5}}>Form</a>
+              
+              <Link to='/form'>
+                <a href='/'>Try Again</a>
               </Link>
             </div>
           </div>
