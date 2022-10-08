@@ -136,7 +136,7 @@ const Members = [
 
   {
     id: 22,
-    image: '../images/team/Arkaprava.jpg',
+    image: '../images/team/Arkaprava.JPG',
     Name: 'Arkaprava Paul',
     team: 'Media Coverage',
   },
