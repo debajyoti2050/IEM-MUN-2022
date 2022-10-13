@@ -47,9 +47,9 @@ export default function Footer() {
                 Management House, D-1, Sector-V, Saltlake Electronics Complex
                 Kolkata – 700 091, West Bengal, India.
                 <br />
-                <strong>Phone:</strong> +91 9988776655
+                <strong>Phone:</strong> +91 8420486351
                 <br />
-                <strong>Email:</strong> info@iemcal.com
+                <strong>Email:</strong> officialiemmun@gmail.com
                 <br />
               </p>
             </div>

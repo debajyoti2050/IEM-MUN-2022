@@ -1,10 +1,11 @@
 .form{
-    padding-top: 85px;
+    padding-top: 200px;
 }
 
 .center{
-    display: flex;
+    display: flex-box;
     justify-content: center;
+    align-items: center;
 }
 
 #regform{
@@ -17,14 +18,13 @@
 }
 
 .drop {
-    background: rgba(255, 253, 255, 0.479);
+    background: rgba(255, 253, 255, 0.447);
     border-radius: 10px;
     border: none;
     backdrop-filter: blur(0px);
    -webkit-backdrop-filter: blur(0px);
     display: block;
     margin: 0 auto;
-    box-shadow:5px 5px #1010104b;
  }
  
  .drop1 {

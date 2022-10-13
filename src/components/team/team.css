@@ -1,0 +1,24 @@
+#team {
+    padding: 60px 0;
+  }
+#team .section-header {
+    margin-bottom: 40px;
+  }
+#team .center{
+    display: flex;
+    justify-content: center;
+}
+.info{
+  width: 260px;
+    text-align: center;
+    background: #18d26e;
+    color: #7505c5;
+    border-radius: 0px 0px 0px 20px;
+    padding: 10px 0px 10px 0px;
+}
+.imgcenter img{
+    width: 260px;
+    height: 265px;
+    border-radius: 0px 20px 0px 0px;
+    border: none;
+}

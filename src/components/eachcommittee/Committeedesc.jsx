@@ -41,8 +41,10 @@ const Committeedesc = () => {
                 guide2={e.Guideline2}
                 s1img={e.Speaker1img}
                 s1name={e.Speaker1name}
+                s1position={e.s1pos}
                 s2img={e.Speaker2img}
                 s2name={e.Speaker2name}
+                s2position={e.s2pos}
               />
             );
           })}
